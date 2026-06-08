@@ -1,0 +1,684 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+    <!-- HERO -->
+    <section class="ve-page-hero" style="background-image:url({{ url_for('static', filename='img/elect.jpg') }});">
+        <div class="ve-page-hero-overlay"></div>
+
+        <div class="container ve-page-hero-content">
+
+            <span class="ve-section-tag">
+                Installation Électrique des Sites Télécoms (BTS)
+            </span>
+
+            <h1>
+                Architecture d’alimentation fiable, sécurisée et redondante
+                pour les infrastructures télécoms
+            </h1>
+
+            <p class="text-white mt-3">
+                RHINOS PLUS TELECOM conçoit et déploie des solutions
+                électriques performantes pour les stations BTS,
+                les sites radio et les infrastructures critiques.
+            </p>
+
+            <nav aria-label="breadcrumb">
+                <ol class="ve-breadcrumb">
+                    <li><a href="/">Accueil</a></li>
+                    <li class="active">Installation Électrique BTS</li>
+                </ol>
+            </nav>
+
+        </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="ve-section ve-service-detail-section">
+        <div class="container">
+
+            <div class="row align-items-center gap-2">
+
+                <!-- CONTENT -->
+                <div class="col-12 col-lg-6 wow fadeInLeft" data-wow-delay="100ms">
+
+                    <span class="ve-section-tag">
+                        Infrastructure Télécom
+                    </span>
+
+                    <h2>
+                        Installation électrique
+                        <span>d’un site télécom (BTS)</span>
+                    </h2>
+
+                    <p>
+                        Les infrastructures télécoms nécessitent une alimentation
+                        électrique stable et continue afin d’assurer la disponibilité
+                        des réseaux 2G, 3G, 4G et 5G.
+                    </p>
+
+                    <p>
+                        Chez RHINOS PLUS TELECOM, nous concevons des architectures
+                        énergétiques fiables intégrant réseau public, énergie solaire,
+                        batteries et groupes électrogènes afin de garantir une
+                        continuité de service optimale.
+                    </p>
+
+                    <div class="ve-checklist mt-4">
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-check-circle"></i>
+                            <div>Architecture énergétique redondante</div>
+                        </div>
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-check-circle"></i>
+                            <div>Protection des équipements critiques</div>
+                        </div>
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-check-circle"></i>
+                            <div>Alimentation stable des équipements radio</div>
+                        </div>
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-check-circle"></i>
+                            <div>Intégration solaire et hybride intelligente</div>
+                        </div>
+
+                    </div>
+
+                    <a href="/contact" class="ve-btn-primary mt-30">
+                        Demander une étude technique
+                    </a>
+
+                </div>
+
+                <!-- IMAGE -->
+                <div class="col-12 col-lg-5 wow fadeInRight" data-wow-delay="200ms">
+
+                    <div class="ve-service-detail-img">
+                        <img src="{{ url_for('static', filename='img/elect3.jpg') }}"
+                            alt="Installation électrique BTS">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ARCHITECTURE -->
+    <section class="ve-section ve-whyus-section">
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <span class="ve-section-tag">
+                    Architecture énergétique
+                </span>
+
+                <h2>
+                    Les composants clés d’un
+                    <span>site télécom BTS</span>
+                </h2>
+
+            </div>
+
+            <div class="row g-4">
+
+                <!-- SOURCE -->
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div class="ve-service-card h-100">
+
+                        <div class="ve-service-icon">
+                            <i class="bi bi-lightning-charge"></i>
+                        </div>
+
+                        <h4>1. Sources d’énergie</h4>
+
+                        <ul class="ve-service-benefits">
+                            <li><i class="bi bi-check-circle"></i> Réseau public 230/400V AC</li>
+                            <li><i class="bi bi-check-circle"></i> Panneaux solaires</li>
+                            <li><i class="bi bi-check-circle"></i> Groupe électrogène diesel</li>
+                            <li><i class="bi bi-check-circle"></i> Batteries de secours</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- PROTECTION -->
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div class="ve-service-card h-100">
+
+                        <div class="ve-service-icon">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+
+                        <h4>2. Protection électrique</h4>
+
+                        <ul class="ve-service-benefits">
+                            <li><i class="bi bi-check-circle"></i> ATS automatique</li>
+                            <li><i class="bi bi-check-circle"></i> Disjoncteurs</li>
+                            <li><i class="bi bi-check-circle"></i> Parafoudres</li>
+                            <li><i class="bi bi-check-circle"></i> Mise à la terre</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- CONVERSION -->
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div class="ve-service-card h-100">
+
+                        <div class="ve-service-icon">
+                            <i class="bi bi-arrow-repeat"></i>
+                        </div>
+
+                        <h4>3. Conversion AC/DC</h4>
+
+                        <ul class="ve-service-benefits">
+                            <li><i class="bi bi-check-circle"></i> Redresseurs AC/DC</li>
+                            <li><i class="bi bi-check-circle"></i> Bus DC -48V</li>
+                            <li><i class="bi bi-check-circle"></i> Distribution stable</li>
+                            <li><i class="bi bi-check-circle"></i> Haute disponibilité</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CHARGES -->
+    <section class="ve-section bg-light">
+        <div class="container">
+
+            <div class="row gap-3 align-items-center">
+
+                <!-- CONTENT -->
+                <div class="col-12 col-lg-6 wow fadeInLeft" data-wow-delay="100ms">
+
+                    <span class="ve-section-tag">
+                        Charges et équipements
+                    </span>
+
+                    <h2>
+                        Les équipements alimentés par le système électrique
+                    </h2>
+
+                    <p>
+                        Le système électrique BTS assure une alimentation
+                        stable et sécurisée pour tous les équipements critiques
+                        du site télécom.
+                    </p>
+
+                    <div class="row mt-4">
+
+                        <div class="col-6">
+
+                            <ul class="ve-service-benefits">
+                                <li class="mb-2"><i class="bi bi-check-circle text-success"></i> BTS 2G / 3G / 4G / 5G</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Équipements radio</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Transmission Fibre</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Microwave</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="col-6">
+
+                            <ul class="ve-service-benefits">
+                                <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Climatisation</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Éclairage</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Systèmes de sécurité</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Équipements auxiliaires</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- IMAGE -->
+                <div class="col-12 col-lg-5 wow fadeInRight" data-wow-delay="200ms">
+
+                    <div class="ve-service-detail-img">
+                        <img src="{{ url_for('static', filename='img/electro66.jpg') }}"
+                            alt="Équipements BTS" class="rounded">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FONCTIONNEMENT -->
+    <section class="ve-section">
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <span class="ve-section-tag">
+                    Fonctionnement du système
+                </span>
+
+                <h2>
+                    Comment fonctionne l’alimentation
+                    d’un <span>site télécom BTS</span> ?
+                </h2>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <div class="ve-process-card text-center">
+
+                        <div class="ve-process-number text-success fw-bold fs-3">01</div>
+
+                        <h5>Mode Normal</h5>
+
+                        <p>
+                            Le site est alimenté par le réseau public
+                            et les panneaux solaires.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <div class="ve-process-card text-center">
+
+                        <div class="ve-process-number text-primary fw-bold fs-3">02</div>
+
+                        <h5>Recharge Batteries</h5>
+
+                        <p>
+                            Les batteries stockent l’énergie
+                            pour garantir l’autonomie.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <div class="ve-process-card text-center">
+
+                        <div class="ve-process-number text-warning fw-bold fs-3">03</div>
+
+                        <h5>Coupure Réseau</h5>
+
+                        <p>
+                            Les batteries prennent le relais
+                            instantanément sans interruption.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <div class="ve-process-card text-center">
+
+                        <div class="ve-process-number text-danger fw-bold fs-3">04</div>
+
+                        <h5>Démarrage Groupe</h5>
+
+                        <p>
+                            Le groupe électrogène démarre
+                            automatiquement via l’ATS.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- AVANTAGES -->
+    <section class="ve-section bg-light">
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <span class="ve-section-tag">
+                    Solutions hybrides
+                </span>
+
+                <h2>
+                    Avantages des systèmes hybrides
+                    <span>(Solaire + Batteries + Diesel)</span>
+                </h2>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <div class="ve-feature-box text-center">
+
+                        <i class="bi bi-fuel-pump text-success" style="font-size: 2.7rem;"></i>
+
+                        <h5>Réduction carburant</h5>
+
+                        <p>
+                            Jusqu’à 70 % d’économie de carburant.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <div class="ve-feature-box text-center">
+
+                        <i class="bi bi-globe text-primary" style="font-size: 2.7rem;"></i>
+
+                        <h5>Énergie propre</h5>
+
+                        <p>
+                            Réduction des émissions polluantes.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <div class="ve-feature-box text-center">
+
+                        <i class="bi bi-broadcast text-warning" style="font-size: 2.7rem;"></i>
+
+                        <h5>Disponibilité réseau</h5>
+
+                        <p>
+                            Fiabilité accrue des services télécoms.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <div class="ve-feature-box text-center">
+
+                        <i class="bi bi-cash-stack text-danger" style="font-size: 2.7rem;"></i>
+
+                        <h5>Réduction OPEX</h5>
+
+                        <p>
+                            Coûts d’exploitation réduits à long terme.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BONNES PRATIQUES -->
+    <section class="ve-section">
+        <div class="container">
+
+            <div class="row">
+
+                <!-- GOOD PRACTICES -->
+                <div class="col-12 col-lg-6">
+
+                    <div class="ve-service-card h-100">
+
+                        <span class="ve-section-tag">
+                            Bonnes pratiques
+                        </span>
+
+                        <h3 class="mb-4">
+                            Pour une alimentation fiable
+                        </h3>
+
+                        <ul class="ve-service-benefits">
+
+                            <li>
+                                <i class="bi bi-check-circle"></i>
+                                Redondance (N+1) des équipements critiques
+                            </li>
+
+                            <li>
+                                <i class="bi bi-check-circle"></i>
+                                Dimensionnement correct des batteries
+                            </li>
+
+                            <li>
+                                <i class="bi bi-check-circle"></i>
+                                Maintenance préventive régulière
+                            </li>
+
+                            <li>
+                                <i class="bi bi-check-circle"></i>
+                                Supervision et monitoring à distance
+                            </li>
+
+                            <li>
+                                <i class="bi bi-check-circle"></i>
+                                Protection contre la foudre
+                            </li>
+
+                            <li>
+                                <i class="bi bi-check-circle"></i>
+                                Gestion sécurisée du carburant
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- RISKS -->
+                <div class="col-12 col-lg-6">
+
+                    <div class="ve-service-card h-100">
+
+                        <span class="ve-section-tag">
+                            Risques fréquents
+                        </span>
+
+                        <h3 class="mb-4">
+                            Les erreurs à éviter
+                        </h3>
+
+                        <ul class="ve-service-benefits">
+
+                            <li>
+                                <i class="bi bi-x-circle"></i>
+                                Mauvaise maintenance du groupe électrogène
+                            </li>
+
+                            <li>
+                                <i class="bi bi-x-circle"></i>
+                                Vol de carburant ou de batteries
+                            </li>
+
+                            <li>
+                                <i class="bi bi-x-circle"></i>
+                                Climatisation défaillante
+                            </li>
+
+                            <li>
+                                <i class="bi bi-x-circle"></i>
+                                Mauvaise mise à la terre
+                            </li>
+
+                            <li>
+                                <i class="bi bi-x-circle"></i>
+                                Surcharge des équipements
+                            </li>
+
+                            <li>
+                                <i class="bi bi-x-circle"></i>
+                                Absence de monitoring énergétique
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="text-center ve-page-hero" style="background-image:url({{ url_for('static', filename='img/elect.jpg') }});"">
+        <div class="ve-page-hero-overlay"></div>
+
+        <div class="container ve-page-hero-content">
+
+            <span class="ve-section-tag">
+                Besoin d’une infrastructure fiable ?
+            </span>
+
+            <h2 class="text-white">
+                RHINOS PLUS TELECOM vous accompagne
+                dans vos projets électriques télécoms
+            </h2>
+
+            <p class="text-white mt-3">
+                Étude, installation, maintenance et optimisation
+                des systèmes électriques pour les sites BTS
+                et infrastructures critiques.
+            </p>
+
+            <div class="mt-4">
+
+                <a href="/contact" class="ve-btn-primary">
+                    Contactez-nous
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SERVICES -->
+    <section class="ve-section bg-light">
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <span class="ve-section-tag">
+                    Nos services
+                </span>
+
+                <h2>
+                    Solutions électriques proposées par
+                    RHINOS PLUS TELECOM
+                </h2>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-12 col-md-6 col-lg-3 sol_elect">
+
+                    <div class="ve-feature-box text-center">
+
+                        <i class="bi bi-diagram-3 text-success" style="font-size: 2.7rem;"></i>
+
+                        <h5>Étude & Design</h5>
+                        <p>
+                            Conception des architectures énergétiques BTS.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 sol_elect">
+
+                    <div class="ve-feature-box text-center">
+
+                        <i class="bi bi-lightning-charge text-primary" style="font-size: 2.7rem;"></i>
+
+                        <h5>Installation</h5>
+
+                        <p>
+                            Déploiement électrique et intégration complète.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 sol_elect">
+
+                    <div class="ve-feature-box text-center">
+
+                        <i class="bi bi-tools text-warning" style="font-size: 2.7rem;"></i>
+
+                        <h5>Maintenance</h5>
+
+                        <p>
+                            Maintenance préventive et corrective des systèmes.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 sol_elect">
+
+                    <div class="ve-feature-box text-center">
+
+                        <i class="bi bi-graph-up-arrow text-danger" style="font-size: 2.7rem;"></i>
+
+                        <h5>Optimisation</h5>
+
+                        <p>
+                            Réduction des coûts énergétiques et amélioration des performances.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+{% endblock %}

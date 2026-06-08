@@ -1,0 +1,669 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="ve-page-hero" style="background-image:url({{ url_for('static', filename='img/aviation light 3.jpeg') }});">
+    <div class="ve-page-hero-overlay"></div>
+
+    <div class="container ve-page-hero-content">
+
+        <span class="ve-section-tag">
+            Aviation Lights – Balisage Aérien
+        </span>
+
+        <h1>
+            Sécurisation aérienne des infrastructures télécoms
+        </h1>
+
+        <p class="text-white mt-3">
+            RHINOS PLUS TELECOM assure l’installation,
+            l’intégration et la maintenance des systèmes
+            de balisage aérien pour les pylônes télécoms,
+            tours et infrastructures critiques.
+        </p>
+
+        <nav aria-label="breadcrumb">
+            <ol class="ve-breadcrumb">
+                <li><a href="/">Accueil</a></li>
+                <li class="active">Aviation Lights</li>
+            </ol>
+        </nav>
+
+    </div>
+</section>
+
+<!-- INTRO -->
+<section class="ve-section ve-service-detail-section">
+    <div class="container">
+
+        <div class="row align-items-center gap-2">
+
+            <!-- CONTENT -->
+            <div class="col-12 col-lg-6 wow fadeInLeft" data-wow-delay="100ms">
+
+                <span class="ve-section-tag">Balisage Aérien</span>
+
+                <h2>Qu’est-ce qu’un <span>Aviation Light ?</span></h2>
+
+                <p>
+                    Les Aviation Lights, également appelés feux de balisage
+                    aérien, sont des dispositifs lumineux installés sur les
+                    pylônes télécoms, tours, bâtiments élevés et infrastructures
+                    industrielles afin de signaler leur présence aux aéronefs.
+                </p>
+
+                <p>
+                    Ces systèmes sont essentiels pour garantir la sécurité
+                    aérienne, particulièrement la nuit ou en conditions
+                    de faible visibilité.
+                </p>
+
+                <div class="ve-checklist mt-4">
+
+                    <div class="ve-check-item">
+                        <i class="bi bi-check-circle"></i>
+                        <div>Signalisation des structures élevées</div>
+                    </div>
+
+                    <div class="ve-check-item">
+                        <i class="bi bi-check-circle"></i>
+                        <div>Visibilité renforcée pour les aéronefs</div>
+                    </div>
+
+                    <div class="ve-check-item">
+                        <i class="bi bi-check-circle"></i>
+                        <div>Respect des normes aéronautiques</div>
+                    </div>
+
+                    <div class="ve-check-item">
+                        <i class="bi bi-check-circle"></i>
+                        <div>Prévention des accidents aériens</div>
+                    </div>
+
+                </div>
+
+                <a href="/contact" class="ve-btn-primary mt-30">
+                    Demander une installation
+                </a>
+
+            </div>
+
+            <!-- IMAGE -->
+            <div class="col-12 col-lg-5 wow fadeInRight" data-wow-delay="200ms">
+
+                <div class="ve-service-detail-img">
+                    <img src="{{ url_for('static', filename='img/aviation light.jpeg') }}"
+                         alt="Aviation Lights" class="rounded">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- IMPORTANCE -->
+<section class="ve-section ve-whyus-section">
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <!-- IMAGE -->
+            <div class="col-12 col-lg-5">
+
+                <div class="ve-whyus-img-wrap wow fadeInLeft" data-wow-delay="100ms">
+
+                    <div class="ve-whyus-img-main bg-img"
+                         style="background-image:url({{ url_for('static', filename='img/aviation light 4.jpeg') }});">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- CONTENT -->
+            <div class="col-12 col-lg-7 wow fadeInRight" data-wow-delay="200ms">
+
+                <div class="ve-whyus-content">
+
+                    <span class="ve-section-tag">
+                        Pourquoi les Aviation Lights sont importants ?
+                    </span>
+
+                    <h2>
+                        Les pylônes télécoms peuvent représenter
+                        un <span>danger aérien</span>
+                    </h2>
+
+                    <p>
+                        Les structures de grande hauteur peuvent constituer
+                        un risque important pour les avions, hélicoptères,
+                        drones et appareils de surveillance aérienne.
+                    </p>
+
+                    <div class="ve-checklist mt-4">
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-airplane"></i>
+                            <div>Protection des avions et hélicoptères</div>
+                        </div>
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-airplane"></i>
+                            <div>Signalisation des pylônes pour les drones</div>
+                        </div>
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-shield-check"></i>
+                            <div>Conformité aux normes de l’aviation civile</div>
+                        </div>
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-eye"></i>
+                            <div>Visibilité à longue distance</div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- TYPES -->
+<section class="ve-section bg-light">
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="ve-section-tag">
+                Types de balisage aérien
+            </span>
+
+            <h2>
+                Les différents types
+                <span>d’Aviation Lights</span>
+            </h2>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- LOW -->
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="ve-service-card h-100 text-center">
+
+                    <div class="ve-service-icon">
+                        <i class="bi bi-lightbulb"></i>
+                    </div>
+
+                    <h4>Feux basse intensité</h4>
+
+                    <p>
+                        Utilisés sur les structures de faible hauteur.
+                    </p>
+
+                    <ul class="ve-service-benefits text-start">
+                        <li><i class="bi bi-check-circle"></i> Couleur rouge</li>
+                        <li><i class="bi bi-check-circle"></i> Fonctionnement nocturne</li>
+                        <li><i class="bi bi-check-circle"></i> Faible consommation</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- MEDIUM -->
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="ve-service-card h-100 text-center">
+
+                    <div class="ve-service-icon">
+                        <i class="bi bi-lightning-charge"></i>
+                    </div>
+
+                    <h4>Feux moyenne intensité</h4>
+
+                    <p>
+                        Adaptés aux pylônes télécoms moyens et grands.
+                    </p>
+
+                    <ul class="ve-service-benefits text-start">
+                        <li><i class="bi bi-check-circle"></i> Haute visibilité</li>
+                        <li><i class="bi bi-check-circle"></i> Fonctionnement jour/nuit</li>
+                        <li><i class="bi bi-check-circle"></i> Sécurité renforcée</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- HIGH -->
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="ve-service-card h-100 text-center">
+
+                    <div class="ve-service-icon">
+                        <i class="bi bi-brightness-high"></i>
+                    </div>
+
+                    <h4>Feux haute intensité</h4>
+
+                    <p>
+                        Destinés aux infrastructures de très grande hauteur.
+                    </p>
+
+                    <ul class="ve-service-benefits text-start">
+                        <li><i class="bi bi-check-circle"></i> Lumière blanche puissante</li>
+                        <li><i class="bi bi-check-circle"></i> Visibilité maximale</li>
+                        <li><i class="bi bi-check-circle"></i> Infrastructures critiques</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- COMPOSANTS -->
+<section class="ve-section">
+    <div class="container">
+
+        <div class="row align-items-center gap-3">
+
+            <!-- CONTENT -->
+            <div class="col-12 col-lg-6 wow fadeInLeft" data-wow-delay="100ms">
+
+                <span class="ve-section-tag">
+                    Système complet
+                </span>
+
+                <h2>
+                    Les composants d’un système
+                    <span>Aviation Light</span>
+                </h2>
+
+                <div class="row mt-4">
+
+                    <div class="col-6">
+
+                        <ul class="ve-service-benefits">
+                            <li><i class="bi bi-check-circle"></i> Lampes LED</li>
+                            <li><i class="bi bi-check-circle"></i> Contrôleur intelligent</li>
+                            <li><i class="bi bi-check-circle"></i> Capteur jour/nuit</li>
+                            <li><i class="bi bi-check-circle"></i> Alimentation électrique</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="col-6">
+
+                        <ul class="ve-service-benefits">
+                            <li><i class="bi bi-check-circle"></i> Protection anti-foudre</li>
+                            <li><i class="bi bi-check-circle"></i> Coffret de commande</li>
+                            <li><i class="bi bi-check-circle"></i> Câblage sécurisé</li>
+                            <li><i class="bi bi-check-circle"></i> Monitoring à distance</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- IMAGE -->
+            <div class="col-12 col-lg-5 wow fadeInRight" data-wow-delay="200ms">
+
+                <div class="ve-service-detail-img">
+                    <img src="{{ url_for('static', filename='img/aviation light 2.jpeg') }}"
+                         alt="Composants Aviation Light" class="rounded">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- INSTALLATION -->
+<section class="ve-section bg-light">
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="ve-section-tag">
+                Installation professionnelle
+            </span>
+
+            <h2>
+                Installation des Aviation Lights
+                sur les sites télécoms
+            </h2>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-12 col-md-6 col-lg-3">
+
+                <div class="ve-process-card text-center">
+
+                    <div class="ve-process-number">01</div>
+
+                    <h5>Étude Technique</h5>
+
+                    <p>
+                        Analyse du pylône et des exigences aéronautiques.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+
+                <div class="ve-process-card text-center">
+
+                    <div class="ve-process-number text-primary">02</div>
+
+                    <h5>Conformité</h5>
+
+                    <p>
+                        Respect des normes de sécurité aérienne.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+
+                <div class="ve-process-card text-center">
+
+                    <div class="ve-process-number text-warning">03</div>
+
+                    <h5>Travaux en hauteur</h5>
+
+                    <p>
+                        Installation sécurisée des équipements lumineux.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+
+                <div class="ve-process-card text-center">
+
+                    <div class="ve-process-number text-danger">04</div>
+
+                    <h5>Tests & Validation</h5>
+
+                    <p>
+                        Vérification de la visibilité et du fonctionnement.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- MAINTENANCE -->
+<section class="ve-section">
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <!-- IMAGE -->
+            <div class="col-12 col-lg-5">
+
+                <div class="ve-whyus-img-wrap wow fadeInLeft" data-wow-delay="100ms">
+
+                    <div class="ve-whyus-img-main bg-img"
+                         style="background-image:url({{ url_for('static', filename='img/aviation light 1.jpeg') }});">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- CONTENT -->
+            <div class="col-12 col-lg-7 wow fadeInRight" data-wow-delay="200ms">
+
+                <div class="ve-whyus-content">
+
+                    <span class="ve-section-tag">
+                        Maintenance & Support
+                    </span>
+
+                    <h2>
+                        Maintenance des
+                        <span>Aviation Lights</span>
+                    </h2>
+
+                    <div class="ve-checklist mt-4">
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-check-circle"></i>
+                            <div>Inspection périodique des feux</div>
+                        </div>
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-check-circle"></i>
+                            <div>Remplacement des lampes défectueuses</div>
+                        </div>
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-check-circle"></i>
+                            <div>Contrôle des alimentations</div>
+                        </div>
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-check-circle"></i>
+                            <div>Maintenance des contrôleurs</div>
+                        </div>
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-check-circle"></i>
+                            <div>Vérification du système anti-foudre</div>
+                        </div>
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-check-circle"></i>
+                            <div>Monitoring et alertes à distance</div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- AVANTAGES LED -->
+<section class="ve-section bg-light">
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="ve-section-tag">
+                Technologie LED
+            </span>
+
+            <h2>
+                Les avantages des systèmes
+                <span>LED modernes</span>
+            </h2>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-12 col-md-6 col-lg-3">
+
+                <div class="ve-feature-box text-center">
+
+                    <i class="bi bi-lightning-charge-fill text-success" style="font-size: 2.7rem;"></i>
+
+                    <h5>Faible consommation</h5>
+
+                    <p>
+                        Réduction des coûts énergétiques.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+
+                <div class="ve-feature-box text-center">
+
+                    <i class="bi bi-clock-history text-primary" style="font-size: 2.7rem;"></i>
+
+                    <h5>Longue durée de vie</h5>
+
+                    <p>
+                        Fonctionnement durable et fiable.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+
+                <div class="ve-feature-box text-center">
+
+                    <i class="bi bi-eye-fill text-warning" style="font-size: 2.7rem;"></i>
+
+                    <h5>Haute visibilité</h5>
+
+                    <p>
+                        Excellente visibilité même à grande distance.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+
+                <div class="ve-feature-box text-center">
+
+                    <i class="bi bi-cloud-rain-heavy text-danger" style="font-size: 2.7rem;"></i>
+
+                    <h5>Résistance climatique</h5>
+
+                    <p>
+                        Adaptés aux conditions météorologiques difficiles.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="text-center ve-page-hero" style="background-image:url({{ url_for('static', filename='img/aviation light 2.jpeg') }});"">
+    <div class="ve-page-hero-overlay"></div>
+    <div class="container ve-page-hero-content">
+
+        <span class="ve-section-tag">
+            Sécurisez vos infrastructures
+        </span>
+
+        <h2 class="text-white">
+            RHINOS PLUS TELECOM vous accompagne
+            dans vos projets de balisage aérien
+        </h2>
+
+        <p class="text-white mt-3">
+            Installation, maintenance et modernisation
+            des systèmes Aviation Lights pour les
+            infrastructures télécoms et industrielles.
+        </p>
+
+        <div class="mt-4">
+
+            <a href="/contact" class="ve-btn-primary">
+                Contactez-nous
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- DOMAINES -->
+<section class="ve-section">
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="ve-section-tag">
+                Domaines d’application
+            </span>
+
+            <h2>
+                Où sont utilisés les <span>Aviation Lights ?</span>
+            </h2>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-12 col-md-6">
+
+                <ul class="ve-service-benefits">
+                    <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Pylônes télécoms</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Tours radio</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Datacenters</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Antennes de diffusion</li>
+                </ul>
+
+            </div>
+
+            <div class="col-12 col-md-6">
+
+                <ul class="ve-service-benefits">
+                    <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Cheminées industrielles</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Bâtiments élevés</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Infrastructures énergétiques</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Sites industriels</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+{% endblock %}

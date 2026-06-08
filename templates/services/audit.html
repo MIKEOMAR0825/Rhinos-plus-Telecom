@@ -1,0 +1,650 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <!-- HERO -->
+    <section class="ve-page-hero"
+        style="background-image:url({{ url_for('static', filename='img/fibre_optique.jpg') }});">
+
+        <div class="ve-page-hero-overlay"></div>
+
+        <div class="container ve-page-hero-content">
+
+            <span class="ve-section-tag">
+                Audit • Inspection • Conformité Télécom
+            </span>
+
+            <h1>
+                L’audit des <span>sites télécoms</span> permet de vérifier 
+                la conformité, la sécurité, les performances et la fiabilité 
+                des infrastructures réseau.
+            </h1>
+
+            <nav aria-label="breadcrumb">
+                <ol class="ve-breadcrumb">
+                    <li><a href="/">Accueil</a></li>
+                    <li class="active">Audit des Sites Télécoms</li>
+                </ol>
+            </nav>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- INTRO -->
+    <section class="ve-section ve-service-detail-section">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="100ms">
+
+                    <span class="ve-section-tag">
+                        Audit Télécom
+                    </span>
+
+                    <h2>
+                        Inspection et évaluation complète des 
+                        <span>infrastructures télécoms</span>
+                    </h2>
+
+                    <p>
+                        L’audit des sites télécoms est une opération technique,
+                        sécuritaire et opérationnelle qui consiste à inspecter,
+                        analyser et évaluer l’état global d’un site de télécommunications.
+                    </p>
+
+                    <p>
+                        Cette activité permet de vérifier la conformité,
+                        les performances réseau, la stabilité énergétique
+                        ainsi que le niveau de sécurité des équipements
+                        et des infrastructures critiques.
+                    </p>
+
+                    <div class="ve-checklist mt-4">
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <div>Identification des anomalies techniques</div>
+                        </div>
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <div>Prévention des pannes réseau</div>
+                        </div>
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <div>Amélioration des performances</div>
+                        </div>
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <div>Réduction des risques techniques et sécuritaires</div>
+                        </div>
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <div>Optimisation des coûts d’exploitation</div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-5 wow fadeInRight" data-wow-delay="200ms">
+
+                    <div class="ve-service-detail-img shadow-lg rounded overflow-hidden">
+                        <img src="{{ url_for('static', filename='img/maintenace3.jpg') }}"
+                             alt="Audit des sites télécoms">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- IMPORTANCE -->
+    <section class="ve-section bg-light">
+
+        <div class="container">
+
+            <div class="ve-section-header text-center">
+
+                <span class="ve-section-tag">
+                    Importance de l’Audit
+                </span>
+
+                <h2>
+                    Pourquoi réaliser un <span>audit télécom</span> ?
+                </h2>
+
+                <p>
+                    L’audit permet d’assurer la disponibilité,
+                    la sécurité et la performance optimale du réseau.
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="service-card shadow-sm rounded p-4 h-100 text-center bg-white">
+
+                        <i class="bi bi-search fs-1 text-primary"></i>
+
+                        <h4 class="mt-3">
+                            Détection
+                        </h4>
+
+                        <p>
+                            Identifier rapidement les anomalies et dysfonctionnements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="service-card shadow-sm rounded p-4 h-100 text-center bg-white">
+
+                        <i class="bi bi-shield-check fs-1 text-success"></i>
+
+                        <h4 class="mt-3">
+                            Sécurité
+                        </h4>
+
+                        <p>
+                            Réduire les risques techniques, humains et énergétiques.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="service-card shadow-sm rounded p-4 h-100 text-center bg-white">
+
+                        <i class="bi bi-speedometer2 fs-1 text-warning"></i>
+
+                        <h4 class="mt-3">
+                            Performance
+                        </h4>
+
+                        <p>
+                            Optimiser la qualité et la stabilité des services réseau.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="service-card shadow-sm rounded p-4 h-100 text-center bg-white">
+
+                        <i class="bi bi-cash-stack fs-1 text-danger"></i>
+
+                        <h4 class="mt-3">
+                            Optimisation
+                        </h4>
+
+                        <p>
+                            Réduire les coûts d’exploitation et de maintenance.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- SITE TELECOM -->
+    <section class="ve-section">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-5">
+
+                    <div class="ve-whyus-img-wrap wow fadeInLeft" data-wow-delay="100ms">
+
+                        <div class="ve-whyus-img-main bg-img"
+                            style="background-image:url({{ url_for('static', filename='img/antenne4.jpg') }});">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-7 wow fadeInRight" data-wow-delay="200ms">
+
+                    <span class="ve-section-tag">
+                        Infrastructure Télécom
+                    </span>
+
+                    <h2>
+                        Qu’est-ce qu’un <span>site télécom</span> ?
+                    </h2>
+
+                    <p>
+                        Un site télécom est une installation technique
+                        permettant d’assurer la couverture réseau,
+                        la transmission des données et la connectivité
+                        des abonnés.
+                    </p>
+
+                    <div class="row mt-4 g-3">
+
+                        <div class="col-md-6">
+
+                            <div class="shadow-sm rounded p-3 h-100">
+
+                                <div class="d-flex align-items-center">
+
+                                    <i class="bi bi-broadcast-pin fs-2 text-primary me-3"></i>
+
+                                    <div>
+                                        <h5 class="mb-1">Pylône & Antennes</h5>
+                                        <p class="mb-0">
+                                            Structures radio assurant la couverture réseau.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <div class="shadow-sm rounded p-3 h-100">
+
+                                <div class="d-flex align-items-center">
+
+                                    <i class="bi bi-hdd-network fs-2 text-success me-3"></i>
+
+                                    <div>
+                                        <h5 class="mb-1">Équipements Radio</h5>
+                                        <p class="mb-0">
+                                            BTS, BBU, RRU et équipements transmission.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <div class="shadow-sm rounded p-3 h-100">
+
+                                <div class="d-flex align-items-center">
+
+                                    <i class="bi bi-lightning-charge-fill fs-2 text-warning me-3"></i>
+
+                                    <div>
+                                        <h5 class="mb-1">Énergie</h5>
+                                        <p class="mb-0">
+                                            Batteries, générateurs et panneaux solaires.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <div class="shadow-sm rounded p-3 h-100">
+
+                                <div class="d-flex align-items-center">
+
+                                    <i class="bi bi-router-fill fs-2 text-danger me-3"></i>
+
+                                    <div>
+                                        <h5 class="mb-1">Transmission</h5>
+                                        <p class="mb-0">
+                                            Faisceaux hertziens et fibre optique.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- OBJECTIFS -->
+    <section class="ve-section ve-services-section bg-light">
+
+        <div class="container">
+
+            <div class="ve-section-header text-center">
+
+                <span class="ve-section-tag">
+                    Objectifs de l’Audit
+                </span>
+
+                <h2>
+                    Les principaux points de <span>vérification</span>
+                </h2>
+
+            </div>
+
+            <div class="row g-4 justify-content-center">
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="shadow-sm rounded p-4 h-100 bg-white">
+
+                        <div class="mb-3">
+                            <i class="bi bi-cpu fs-1 text-primary"></i>
+                        </div>
+
+                        <h4>
+                            Fonctionnement du Site
+                        </h4>
+
+                        <p>
+                            Vérifier que tous les équipements fonctionnent correctement.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="shadow-sm rounded p-4 h-100 bg-white">
+
+                        <div class="mb-3">
+                            <i class="bi bi-check2-square fs-1 text-success"></i>
+                        </div>
+
+                        <h4>
+                            Conformité
+                        </h4>
+
+                        <p>
+                            Contrôler le respect des normes techniques et sécuritaires.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="shadow-sm rounded p-4 h-100 bg-white">
+
+                        <div class="mb-3">
+                            <i class="bi bi-shield-lock fs-1 text-danger"></i>
+                        </div>
+
+                        <h4>
+                            Sécurité
+                        </h4>
+
+                        <p>
+                            Vérifier la protection des équipements et du personnel.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="shadow-sm rounded p-4 h-100 bg-white">
+
+                        <div class="mb-3">
+                            <i class="bi bi-lightning-charge fs-1 text-warning"></i>
+                        </div>
+
+                        <h4>
+                            Énergie
+                        </h4>
+
+                        <p>
+                            Contrôler la stabilité énergétique et les systèmes de secours.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="shadow-sm rounded p-4 h-100 bg-white">
+
+                        <div class="mb-3">
+                            <i class="bi bi-broadcast-pin fs-1 text-info"></i>
+                        </div>
+
+                        <h4>
+                            État du Pylône
+                        </h4>
+
+                        <p>
+                            Inspecter les structures métalliques et les antennes.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="shadow-sm rounded p-4 h-100 bg-white">
+
+                        <div class="mb-3">
+                            <i class="bi bi-graph-up-arrow fs-1 text-secondary"></i>
+                        </div>
+
+                        <h4>
+                            Performance Réseau
+                        </h4>
+
+                        <p>
+                            Analyser les KPI et les performances du réseau.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- PROCESS -->
+    <section class="ve-section">
+
+        <div class="container">
+
+            <div class="ve-section-header text-center">
+
+                <span class="ve-section-tag">
+                    Processus d’Audit
+                </span>
+
+                <h2>
+                    Les étapes d’un <span>audit télécom</span>
+                </h2>
+
+            </div>
+
+            <div class="row g-4 justify-content-center text-center">
+
+                <div class="col-md-2">
+
+                    <div class="shadow-sm rounded p-4 h-100">
+
+                        <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-3"
+                            style="width:70px;height:70px;">
+                            1
+                        </div>
+
+                        <h5>
+                            Inspection
+                        </h5>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-2">
+
+                    <div class="shadow-sm rounded p-4 h-100">
+
+                        <div class="rounded-circle bg-success text-white d-inline-flex align-items-center justify-content-center mb-3"
+                            style="width:70px;height:70px;">
+                            2
+                        </div>
+
+                        <h5>
+                            Analyse
+                        </h5>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-2">
+
+                    <div class="shadow-sm rounded p-4 h-100">
+
+                        <div class="rounded-circle bg-warning text-white d-inline-flex align-items-center justify-content-center mb-3"
+                            style="width:70px;height:70px;">
+                            3
+                        </div>
+
+                        <h5>
+                            Vérification
+                        </h5>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-2">
+
+                    <div class="shadow-sm rounded p-4 h-100">
+
+                        <div class="rounded-circle bg-danger text-white d-inline-flex align-items-center justify-content-center mb-3"
+                            style="width:70px;height:70px;">
+                            4
+                        </div>
+
+                        <h5>
+                            Rapport
+                        </h5>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-2">
+
+                    <div class="shadow-sm rounded p-4 h-100">
+
+                        <div class="rounded-circle bg-dark text-white d-inline-flex align-items-center justify-content-center mb-3"
+                            style="width:70px;height:70px;">
+                            5
+                        </div>
+
+                        <h5>
+                            Recommandations
+                        </h5>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CTA -->
+    <section class="ve-cta-banner bg-img"
+        style="background-image:url({{ url_for('static', filename='img/audit.jpg') }});">
+
+        <div class="ve-cta-overlay"></div>
+
+        <div class="container ve-cta-content">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-8">
+
+                    <h2>
+                        Besoin d’un audit professionnel de vos sites télécoms ?
+                    </h2>
+
+                    <p>
+                        RHINOS PLUS TELECOM réalise des audits complets
+                        afin de garantir la sécurité, la conformité
+                        et les performances optimales de vos infrastructures réseau.
+                    </p>
+
+                </div>
+
+                <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+
+                    <a href="/contact" class="ve-btn-white">
+                        Contactez-nous
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+{% endblock %}

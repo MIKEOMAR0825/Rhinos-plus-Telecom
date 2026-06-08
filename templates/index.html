@@ -1,0 +1,536 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+    <!-- ===== HERO: Split layout — left text, right image panel ===== -->
+    <section class="ve-hero">
+        <!-- Left Panel -->
+        <div class="ve-hero-left">
+            <span class="ve-hero-badge">Construire aujourd’hui, connecter demain</span>
+
+            <!--
+            <h1>Nous accompagnons nos partenaires de la conception jusqu’à <span class="ve-highlight">l’exploitation des infrastructures.</span><br></h1>
+            <p>Nous sommes une entreprise de droit congolais, régulièrement constituée et enregistrée au Registre du Commerce et du Crédit Mobilier (RCCM) sous le numéro RCCM/24-B-03460, et disposant du numéro d’identification nationale 01-H5300-N59186M.</p>
+            -->
+            <h1>
+                Nous concevons, déployons et maintenons des
+                <span class="ve-highlight">infrastructures télécoms critiques</span>
+                pour connecter durablement l’Afrique.
+            </h1>
+
+            <p>
+                RHINOS PLUS TELECOM accompagne les opérateurs,
+                entreprises et institutions dans le déploiement,
+                l’exploitation, l’optimisation et la sécurisation
+                des réseaux télécoms nouvelle génération.
+            </p>
+
+            <div class="ve-hero-btns">
+                <a href="/services" class="ve-btn-primary">Explorer nos Services</a>
+                <a href="/about" class="ve-btn-ghost">En savoir plus</a>
+            </div>
+            <!-- Quick Stats Row -->
+            <div class="ve-hero-stats">
+                <div class="ve-stat">
+                    <strong>24/7</strong>
+                    <span>Supervision réseau</span>
+                </div>
+                <div class="ve-stat-divider"></div>
+                <div class="ve-stat">
+                    <strong>99.9%</strong>
+                    <span>Disponibilité réseau</span>
+                </div>
+                <div class="ve-stat-divider"></div>
+                <div class="ve-stat">
+                    <strong>100+</strong>
+                    <span>Sites télécoms déployés</span>
+                </div>
+                <div class="ve-stat-divider"></div>
+                <div class="ve-stat">
+                    <strong>4G/5G</strong>
+                    <span>Technologies supportées</span>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Right Panel: overlapping image cards -->
+        <div class="ve-hero-right">
+            <div class="ve-hero-img-main bg-img" style="background-image:url( {{ url_for('static', filename='img/bg-img/1.jpg') }} );"></div>
+            <div class="ve-hero-img-accent bg-img" style="background-image:url( {{ url_for('static', filename='img/connect.jpg') }} );"></div>
+            
+            <!-- Floating card -->
+            <div class="ve-float-card">
+                <i class="bi bi-line-chart"></i>
+                <div>
+                    <strong>+18.4%</strong>
+                    <span>Rendements annuels</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    
+
+    <!-- ===== MARQUEE TRUST BAR ===== -->
+    <div class="ve-trust-bar">
+
+        <div class="ve-trust-inner">
+
+            <span><i class="bi bi-broadcast-pin"></i> Déploiement BTS & Sites Radio</span>
+            <span><i class="bi bi-router"></i> Backbone IP & Transmission FH</span>
+            <span><i class="bi bi-hdd-network"></i> Intégration d’équipements télécoms</span>
+            <span><i class="bi bi-lightning"></i> Power Room & Énergie Télécom</span>
+            <span><i class="bi bi-shield-fill-check"></i> Conformité HSE Internationale</span>
+            <span><i class="bi bi-binoculars"></i> NOC & Monitoring 24h/24</span>
+            <span><i class="bi bi-wifi"></i> Optimisation Réseau Mobile</span>
+            <span><i class="bi bi-cloud-arrow-up"></i> Solutions FTTH & Fibre Optique</span>
+
+        </div>
+
+    </div>
+
+    <!-- NOS DOMAINES D'EXPERTISES NOUVEAU -->
+    <section class="ve-section bg-light">
+        <div class="container">
+
+            <div class="ve-section-header text-center">
+                <span class="ve-section-tag">Expertise Télécom</span>
+                <h2>Des solutions complètes pour les <span>infrastructures critiques</span></h2>
+            </div>
+
+            <div class="row g-4 sol_complete text-center justify-content-center align-items-center">
+
+                <div class="col-md-3">
+                    <div class="expertise-box">
+                        <i class="bi bi-broadcast text-success"></i>
+                        <h5>Réseaux Radio</h5>
+                        <p>BTS, RRU, BBU, antennes, optimisation radio.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="expertise-box">
+                        <i class="bi bi-diagram-3 text-primary"></i>
+                        <h5>Transmission</h5>
+                        <p>Fibre optique, FH, backbone IP et transport data.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="expertise-box">
+                        <i class="bi bi-lightning-charge text-danger"></i>
+                        <h5>Énergie</h5>
+                        <p>Power room, solaire, groupes électrogènes et ATS.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="expertise-box">
+                        <i class="bi bi-shield-check text-warning"></i>
+                        <h5>Sécurité & Audit</h5>
+                        <p>Audit technique, HSE et conformité des sites.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== INTRO BASE DANS LE DOMAINE DE TELECOM ===== -->
+    <section class="ve-section ve-services-section">
+        <div class="container">
+            
+            <div class="ve-section-header text-center">
+                <span class="ve-section-tag">Ce que nous offrons</span>
+                <h2>Basée dans le domaine des <span class="base" id="base" >télécommunications</span></h2>
+                <p>RHINOS PLUS TELECOM est spécialisée dans le domaine des télécommunications, avec une expertise particulière dans :</p>
+            </div>
+
+            <div class="ve-services-grid">
+
+                <div class="ve-service-card wow fadeInUp" data-wow-delay="100ms">
+                    <div class="mb-4"><img src="{{ url_for('static', filename='img/Antenne1.png') }}" class="card-img-top" alt="..."></div>
+                    <h4>Déploiement et construction d’infranstructure</h4>
+                    <p>Les infrastuctures télécoms permettent de connecter les personnes, les entreprises et territoires.</p>
+                    <a href="{{ url_for('deploiement') }}" class="ve-card-link">Apprendre plus <i class="fa fa-long-arrow-right"></i></a>
+                </div>
+
+                <div class="ve-service-card wow fadeInUp" data-wow-delay="200ms">
+                    <div class="mb-4"><img src="{{ url_for('static', filename='img/inst_reseau.jpg') }}" class="card-img-top" alt="..."></div>
+                    <h4>Installation et intégration d’équipements</h4>
+                    <p>De l'installation physique des équipements à l'intégration intelligente pour des services fiables et performants.</p>
+                    <a href="{{ url_for('inst_reseau') }}" class="ve-card-link">Apprendre plus <i class="fa fa-long-arrow-right"></i></a>
+                </div>
+
+                <div class="ve-service-card wow fadeInUp" data-wow-delay="300ms">
+                    <div class="mb-4"><img src="{{ url_for('static', filename='img/maintenance.jpg') }}" class="card-img-top" alt="..."></div>
+                    <h4>Maintenance et exploitation</h4>
+                    <p>Assurer la disponibilité, la performance et la sécurité du réseau 24h/24 et 7j/7</p>
+                    <a href="{{ url_for('maintenance') }}" class="ve-card-link">Apprendre plus <i class="fa fa-long-arrow-right"></i></a>
+                </div>
+
+                <div class="ve-service-card wow fadeInUp" data-wow-delay="400ms">
+                    <div class="mb-4"><img src="{{ url_for('static', filename='img/solution_energie.jpg') }}" class="card-img-top" alt="..."></div>
+                    <h4>Solutions énergetiques et électriques</h4>
+                    <p>Offrir des solutions énergetiques et électriques innovantes pour répondre aux besoins spécifiques de nos clients.</p>
+                    <a href="{{ url_for('inst_electrique') }}" class="ve-card-link">Apprendre plus <i class="fa fa-long-arrow-right"></i></a>
+                </div>
+
+                <div class="ve-service-card wow fadeInUp" data-wow-delay="500ms">
+                    <div class="mb-4"><img src="{{ url_for('static', filename='img/trav_haut.jpg') }}" class="card-img-top" alt="..."></div>
+                    <h4>Travaux en hauteur</h4>
+                    <p>Execution de travaux en hauteur avec les normes de sécurité les plus strictes.</p>
+                    <a href="{{ url_for('trav_hauteur') }}" class="ve-card-link">Apprendre plus <i class="fa fa-long-arrow-right"></i></a>
+                </div>
+
+                <div class="ve-service-card wow fadeInUp" data-wow-delay="600ms">
+                    <div class="mb-4"><img src="{{ url_for('static', filename='img/fibre_opt.jpg') }}" class="card-img-top" alt="..."></div>
+                    <h4>Fibre optique</h4>
+                    <p>La fibre optique permet de transmettre des données sous forme de lumière dans un fil de verre ou de plastique. Elle permet des débits très élevés sur de longues distances avec une excellente fiabilité.</p>
+                    <a href="{{ url_for('fibre_optique') }}" class="ve-card-link">Apprendre plus <i class="fa fa-long-arrow-right"></i></a>
+                </div>
+
+                <div class="ve-service-card wow fadeInUp" data-wow-delay="600ms">
+                    <div class="mb-4"><img src="{{ url_for('static', filename='img/optimisation.jpg') }}" class="card-img-top" alt="..."></div>
+                    <h4>Optimisation</h4>
+                    <p>Optimiser les processus et améliorer les performances grâce à une approche basée sur les données.</p>
+                    <a href="{{ url_for('optimisation') }}" class="ve-card-link">Apprendre plus <i class="fa fa-long-arrow-right"></i></a>
+                </div>
+
+                <div class="ve-service-card wow fadeInUp" data-wow-delay="600ms">
+                    <div class="mb-4"><img src="{{ url_for('static', filename='img/fibre_optique.jpg') }}" class="card-img-top" alt="..."></div>
+                    <h4>Audit</h4>
+                    <p>Assurer la conformité et l'efficacité des processus métiers.</p>
+                    <a href="{{ url_for('audit') }}" class="ve-card-link">Apprendre plus <i class="fa fa-long-arrow-right"></i></a>
+                </div>
+
+                <div class="ve-service-card wow fadeInUp" data-wow-delay="600ms">
+                    <div class="mb-4"><img src="{{ url_for('static', filename='img/electro2.jpg') }}" class="card-img-top" alt="..."></div>
+                    <h4>Maintenance des Groupes Électrogènes</h4>
+                    <p>Assurer la sécurité et l'efficacité des groupes électrogènes.</p>
+                    <a href="{{ url_for('electrogene') }}" class="ve-card-link">Apprendre plus <i class="fa fa-long-arrow-right"></i></a>
+                </div>
+                
+                <div class="ve-service-card wow fadeInUp" data-wow-delay="600ms">
+                    <div class="mb-4"><img src="{{ url_for('static', filename='img/aviation light 3.jpeg') }}" class="card-img-top" alt="..."></div>
+                    <h4>Aviation Lights – Balisage Aérien</h4>
+                    <p>Fournir une solution de balisage aérien fiable et efficace pour assurer la sécurité des opérations aériennes.</p>
+                    <a href="{{ url_for('aviation') }}" class="ve-card-link">Apprendre plus <i class="fa fa-long-arrow-right"></i></a>
+                </div>
+                
+                <div class="ve-service-card wow fadeInUp" data-wow-delay="600ms">
+                    <div class="mb-4"><img src="{{ url_for('static', filename='img/power room.jpeg') }}" class="card-img-top" alt="..."></div>
+                    <h4>Power Room – Salle d’Énergie Technique</h4>
+                    <p>Assurer la sécurité et l'efficacité des installations énergétiques.</p>
+                    <a href="{{ url_for('power_room') }}" class="ve-card-link">Apprendre plus <i class="fa fa-long-arrow-right"></i></a>
+                </div>
+                
+                <div class="ve-service-card wow fadeInUp" data-wow-delay="600ms">
+                    <div class="mb-4"><img src="{{ url_for('static', filename='img/panneau solaire 4.jpeg') }}" class="card-img-top" alt="..."></div>
+                    <h4>Panneaux Solaires pour Sites Télécoms</h4>
+                    <p>Fournir une source d'énergie renouvelable pour alimenter les infrastructures de télécommunications.</p>
+                    <a href="{{ url_for('panneau') }}" class="ve-card-link">Apprendre plus <i class="fa fa-long-arrow-right"></i></a>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- POURQUOI NOUS CHOISIR -->
+    <section class="ve-section ve-whyus-section">
+
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Image Side -->
+                <div class="col-12 col-lg-5">
+                    <div class="ve-whyus-img-wrap wow fadeInLeft" data-wow-delay="100ms">
+                        <div class="ve-whyus-img-main bg-img" style="background-image:url( {{ url_for('static', filename='img/deploiement3.jpg') }} );"></div>
+                        <div class="ve-whyus-badge d-none">
+                            <strong>12+</strong>
+                            <span>Years of Financial Excellence</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content Side -->
+                <div class="col-12 col-lg-7 wow fadeInRight" data-wow-delay="200ms">
+                    <div class="ve-whyus-content">
+                        <span class="ve-section-tag">Pourquoi Rhinos plus Télécom</span>
+                        <h2>Solution sur terrain pour <span>des réseaux fiables</span></h2>
+                        <p>Nous assurons la conception, l'ingénierie, le déploiement et la maintenance de réseaux à haut débit, garantissant une transmission rapide, stable et sécurisée des données sur de longues distances.</p>
+                        <div class="ve-checklist">
+                            <div class="ve-check-item">
+                                <i class="bi bi-check-circle"></i>
+                                <div><strong>Innovation</strong><p>Adopter des technologies de pointe pour anticiper les besoins futurs.</p></div>
+                            </div>
+                            <div class="ve-check-item">
+                                <i class="bi bi-check-circle"></i>
+                                <div><strong>Fiabilité</strong><p>Assurer la continuité, la sécurité et la qualité du service.</p></div>
+                            </div>
+
+                            <div class="ve-check-item">
+                                <i class="bi bi-check-circle"></i>
+                                <div><strong>Accessibilité</strong><p>Rendre la connectivité disponible et abordable pour tous, y compris dans les zones rurales.</p></div>
+                            </div>
+                            <div class="ve-check-item">
+                                <i class="bi bi-check-circle"></i>
+                                <div><strong>Intégrité</strong><p>Agir avec transparence, éthique, et responsabilité.</p></div>
+                            </div>
+                            <div class="ve-check-item">
+                                <i class="bi bi-check-circle"></i>
+                                <div><strong>Excellence</strong><p>Toujours en quête de performance et de satisfaction client.</p></div>
+                            </div>
+                            <div class="ve-check-item">
+                                <i class="bi bi-check-circle"></i>
+                                <div><strong>Engagement social</strong><p>Contribuer activement au développement numérique des communautés.</p></div>
+                            </div>
+                        </div>
+                        <a href="/about" class="ve-btn-primary mt-30">Découvrez notre histoire</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESSUS OPERATIONNEL NOUVEAU ❌-->
+    <section class="ve-section d-none">
+        <div class="container">
+
+            <div class="ve-section-header text-center">
+                <span class="ve-section-tag">Méthodologie</span>
+                <h2>Notre processus d’intervention terrain</h2>
+            </div>
+
+            <div class="row g-4 processus_inter">
+
+                <div class="col-md-2">
+                    <div class="process-card">
+                        <span>1</span>
+                        <h6>Audit</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="process-card">
+                        <span>2</span>
+                        <h6>Étude</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="process-card">
+                        <span>3</span>
+                        <h6>Déploiement</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="process-card">
+                        <span>4</span>
+                        <h6>Intégration</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="process-card">
+                        <span>5</span>
+                        <h6>Optimisation</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="process-card">
+                        <span>6</span>
+                        <h6>Maintenance</h6>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TECHNOLOGIES SUPPORTÉES NOUVEAU NOUVEAU ❌-->
+    <section class="ve-section bg-dark text-white d-none">
+        <div class="container text-center">
+
+            <span class="ve-section-tag">Technologies</span>
+
+            <h2>Technologies et infrastructures supportées</h2>
+
+            <div class="row mt-5">
+
+                <div class="col-md-2">2G</div>
+                <div class="col-md-2">3G</div>
+                <div class="col-md-2">4G LTE</div>
+                <div class="col-md-2">5G</div>
+                <div class="col-md-2">FTTH</div>
+                <div class="col-md-2">IP/MPLS</div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ENGAGEMENT HSE NOUVEAU -->
+    <section class="ve-section bg-light">
+        <div class="container">
+
+            <div class="row align-items-center gap-3">
+
+                <div class="col-lg-5">
+                    <img src="{{ url_for('static', filename='img/trav_haut.jpg') }}" class="img-fluid rounded">
+                </div>
+
+                <div class="col-lg-6">
+
+                    <span class="ve-section-tag">HSE & Sécurité</span>
+
+                    <h2>La sécurité au cœur de nos opérations</h2>
+
+                    <p>
+                        Nous appliquons les standards HSE internationaux
+                        pour garantir la sécurité de nos techniciens,
+                        des infrastructures et des populations.
+                    </p>
+
+                    <ul class="ve-service-benefits">
+                        <li><i class="bi bi-check-circle-fill"></i> Travaux en hauteur sécurisés</li>
+                        <li><i class="bi bi-check-circle-fill"></i> EPI certifiés</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Procédures de consignation</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Prévention des risques électriques</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ZONE D'INTERVENTION NOUVEAU-->
+    <section class="ve-section">
+        <div class="container text-center">
+
+            <span class="ve-section-tag">Présence Nationale</span>
+
+            <h2>Interventions sur toute l’étendue de la RDC</h2>
+
+            <p>
+                Kinshasa • Lubumbashi • Goma • Kolwezi • Kisangani • Matadi • Bukavu
+            </p>
+
+        </div>
+    </section>    
+
+    <!-- ===== COUNTERS ===== -->
+    {% include "counter.html" %}
+        <!-- ===== CTA BANNER ===== -->
+    {% include "reserve_consult.html" %}
+
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="ve-section ve-testimonials-section">
+        <div class="container">
+            <div class="ve-section-header text-center">
+                <span class="ve-section-tag">Témoignages clients</span>
+                <h2>Ce que disent <span>nos clients</span></h2>
+            </div>
+            <div class="ve-testi-grid">
+                <div class="ve-testi-card wow fadeInUp" data-wow-delay="100ms">
+                    <div class="ve-testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p>
+                    "RHINOS PLUS TELECOM nous a accompagnés
+                    dans le déploiement et la maintenance
+                    de plusieurs sites stratégiques avec un excellent niveau de professionnalisme."
+                    </p>
+                    <div class="ve-testi-author">
+                        <div class="ve-testi-avatar bg-img" style="background-image:url( {{ url_for('static', filename='img/bg-img/32.jpg') }} );"></div>
+                        <div><strong>Alex Kalala</strong><span>Entrepreneur</span></div>
+                    </div>
+                </div>
+
+                <div class="ve-testi-card wow fadeInUp d-none" data-wow-delay="250ms">
+                    <div class="ve-testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p>« L’équipe de planification de la retraite de VaultEdge m’a apporté une totale tranquillité d’esprit. Professionnelle, réactive et axée sur les résultats. »</p>
+                    <div class="ve-testi-author">
+                        <div class="ve-testi-avatar bg-img" style="background-image:url( {{ url_for('static', filename='img/bg-img/33.jpg') }} );"></div>
+                        <div><strong>Sarah Patel</strong><span>Directrice Marketing</span></div>
+                    </div>
+                </div>
+                <div class="ve-testi-card wow fadeInUp d-none" data-wow-delay="400ms">
+                    <div class="ve-testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p>« Nous avons changé de cabinet et nous n'en sommes que ravis. Leurs conseils fiscaux à eux seuls nous ont permis d'économiser des milliers de dollars dès la première année. »</p>
+                    <div class="ve-testi-author">
+                        <div class="ve-testi-avatar bg-img" style="background-image:url( {{ url_for('static', filename='img/bg-img/14.jpg') }} );"></div>
+                        <div><strong>James Liu</strong><span>Propriétaire d'entreprise</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== LATEST INSIGHTS ===== -->
+    <section class="ve-section ve-insights-section d-none">
+        <div class="container">
+
+            <div class="ve-section-header text-center">
+                <span class="ve-section-tag">Blog et actualités</span>
+                <h2>Dernières <span>analyses financières</span></h2>
+                <p>Gardez une longueur d'avance grâce aux commentaires d'experts, aux analyses de marché et aux conseils financiers pratiques.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-4 wow fadeInUp" data-wow-delay="100ms">
+                    <div class="ve-insight-card">
+                        <div class="ve-insight-img bg-img" style="background-image:url( {{ url_for('static', filename='img/bg-img/10.jpg') }} );"></div>
+                        <div class="ve-insight-body">
+                            <span class="ve-insight-cat">Investment</span>
+                            <h5><a href="single-post.html">5 stratégies d'investissement intelligentes pour 2025</a></h5>
+                            <p>Découvrez les meilleures stratégies utilisées par les investisseurs chevronnés pour accroître leur patrimoine sur des marchés volatils.</p>
+                            <div class="ve-insight-meta">
+                                <span><i class="fa fa-calendar"></i> April 26</span>
+                                <a href="single-post.html">En savoir plus <i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 wow fadeInUp" data-wow-delay="250ms">
+                    <div class="ve-insight-card">
+                        <div class="ve-insight-img bg-img" style="background-image:url( {{ url_for('static', filename='img/bg-img/11.jpg') }} );"></div>
+                        <div class="ve-insight-body">
+                            <span class="ve-insight-cat">Credit</span>
+                            <h5><a href="single-post.html">Comprendre votre cote de crédit en 2025</a></h5>
+                            <p>Découvrez les facteurs clés qui influencent votre cote de crédit et comment l'améliorer rapidement.</p>
+                            <div class="ve-insight-meta">
+                                <span><i class="fa fa-calendar"></i> April 20</span>
+                                <a href="single-post.html">En savoir plus <i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="ve-insight-card">
+                        <div class="ve-insight-img bg-img" style="background-image:url( {{ url_for('static', filename='img/bg-img/12.jpg') }} );"></div>
+                        <div class="ve-insight-body">
+                            <span class="ve-insight-cat">Economies</span>
+                            <h5><a href="single-post.html">Se constituer un patrimoine à la trentaine : un guide complet</a></h5>
+                            <p>The financial habits and investment moves that set you up for lifelong prosperity.</p>
+                            <div class="ve-insight-meta">
+                                <span><i class="fa fa-calendar"></i> April 14</span>
+                                <a href="single-post.html">En savoir plus <i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+{% endblock%}

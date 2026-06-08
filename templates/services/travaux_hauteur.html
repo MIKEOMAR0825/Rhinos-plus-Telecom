@@ -1,0 +1,580 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <!-- HERO -->
+    <section class="ve-page-hero" style="background-image:url({{ url_for('static', filename='img/trav_haut2.jpg') }});">
+        <div class="ve-page-hero-overlay"></div>
+
+        <div class="container ve-page-hero-content">
+
+            <span class="ve-section-tag">Travaux en hauteur</span>
+
+            <h1>
+                Sécuriser les interventions sur les 
+                <span>pylônes</span>, 
+                <span>tours GSM</span> et 
+                <span>structures télécoms</span> 
+                avec les plus hauts standards HSE.
+            </h1>
+
+            <nav aria-label="breadcrumb">
+                <ol class="ve-breadcrumb">
+                    <li><a href="/">Accueil</a></li>
+                    <li class="active">Travaux en hauteur</li>
+                </ol>
+            </nav>
+
+        </div>
+    </section>
+
+
+
+    <!-- INTRO -->
+    <section class="ve-section ve-service-detail-section">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="100ms">
+
+                    <span class="ve-section-tag">Sécurité & Télécom</span>
+
+                    <h2>
+                        Les travaux en hauteur dans le secteur 
+                        <span>télécom</span>
+                    </h2>
+
+                    <p>
+                        Les travaux en hauteur constituent l’une des activités les plus sensibles 
+                        et les plus techniques dans le domaine des télécommunications.
+                    </p>
+
+                    <p>
+                        Ils concernent toutes les interventions réalisées sur des structures élevées 
+                        telles que les pylônes télécoms, tours GSM, rooftops, mâts, structures métalliques 
+                        et antennes radio.
+                    </p>
+
+                    <p>
+                        Ces opérations interviennent principalement lors du déploiement des réseaux, 
+                        de l’installation des antennes, de la maintenance, du remplacement des équipements 
+                        et de l’optimisation réseau.
+                    </p>
+
+                    <div class="ve-checklist mt-4">
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <div>Installation d’antennes GSM et radio</div>
+                        </div>
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <div>Maintenance et optimisation réseau</div>
+                        </div>
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <div>Travaux sur pylônes et rooftops</div>
+                        </div>
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <div>Respect strict des normes HSE</div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 mt-4 mt-lg-0 wow fadeInRight" data-wow-delay="200ms">
+
+                    <div class="ve-service-detail-img">
+                        <img src="{{ url_for('static', filename='img/trav_haut4.jpg') }}" alt="Travaux en hauteur télécom">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- DEFINITION -->
+    <section class="ve-section bg-light">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-10 text-center">
+
+                    <span class="ve-section-tag">Définition</span>
+
+                    <h2>
+                        Qu’est-ce qu’un <span>travail en hauteur</span> ?
+                    </h2>
+
+                    <p class="mt-4">
+                        On parle de travail en hauteur lorsqu’un technicien intervient 
+                        à une hauteur présentant un risque de chute.
+                    </p>
+
+                    <div class="shadow-sm rounded p-5 bg-white mt-4">
+
+                        <h3 class="fw-bold text-danger">
+                            Toute intervention à plus de 2 mètres du sol
+                            est considérée comme travail en hauteur.
+                        </h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ACTIVITES -->
+    <section class="ve-section">
+
+        <div class="container">
+
+            <div class="ve-section-header text-center">
+
+                <span class="ve-section-tag">Activités Télécom</span>
+
+                <h2>
+                    Les principales activités en 
+                    <span>hauteur</span>
+                </h2>
+
+            </div>
+
+            <div class="row g-4">
+
+                <!-- INSTALLATION -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="shadow-sm rounded p-4 h-100">
+
+                        <i class="bi bi-broadcast fs-1 text-primary"></i>
+
+                        <h4 class="mt-3">Installation des antennes</h4>
+
+                        <p>
+                            Montage des antennes GSM, antennes micro-ondes, RRU,
+                            feeders et équipements radio.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- FH -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="shadow-sm rounded p-4 h-100">
+
+                        <i class="bi bi-wifi fs-1 text-success"></i>
+
+                        <h4 class="mt-3">Alignement FH</h4>
+
+                        <p>
+                            Orientation des paraboles et réglage des faisceaux 
+                            hertziens pour assurer la transmission.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- MAINTENANCE -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="shadow-sm rounded p-4 h-100">
+
+                        <i class="bi bi-tools fs-1 text-warning"></i>
+
+                        <h4 class="mt-3">Maintenance des sites</h4>
+
+                        <p>
+                            Interventions sur les antennes, câblages, systèmes électriques 
+                            et structures métalliques.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- PYLONES -->
+                <div class="col-md-6 col-lg-6">
+
+                    <div class="shadow-sm rounded p-4 h-100">
+
+                        <i class="bi bi-building fs-1 text-danger"></i>
+
+                        <h4 class="mt-3">Remise en état des pylônes</h4>
+
+                        <p>
+                            Peinture anticorrosion, remplacement des boulons et 
+                            renforcement des structures métalliques.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- SOLAIRE -->
+                <div class="col-md-6 col-lg-6">
+
+                    <div class="shadow-sm rounded p-4 h-100">
+
+                        <i class="bi bi-sun fs-1 text-warning"></i>
+
+                        <h4 class="mt-3">Installation solaire</h4>
+
+                        <p>
+                            Pose des panneaux solaires, supports métalliques 
+                            et câbles énergétiques sur les sites télécoms.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- TYPES STRUCTURES -->
+    <section class="ve-section ve-services-section bg-light">
+
+        <div class="container">
+
+            <div class="ve-section-header text-center">
+
+                <span class="ve-section-tag">Structures Télécom</span>
+
+                <h2>
+                    Types de structures utilisées dans les 
+                    <span>travaux en hauteur</span>
+                </h2>
+
+            </div>
+
+            <div class="row g-4">
+
+                <!-- AUTOPORTANT -->
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="shadow-sm rounded p-4 bg-white h-100">
+
+                        <h4>Pylône autoportant</h4>
+
+                        <p>
+                            Structure métallique stable à 3 ou 4 pieds.
+                            Hauteur : 30m, 45m, 60m ou plus.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- HAUBANE -->
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="shadow-sm rounded p-4 bg-white h-100">
+
+                        <h4>Pylône haubané</h4>
+
+                        <p>
+                            Maintenu par des câbles métalliques.
+                            Solution économique nécessitant plus d’espace.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- MONOPOLE -->
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="shadow-sm rounded p-4 bg-white h-100">
+
+                        <h4>Monopole</h4>
+
+                        <p>
+                            Structure cylindrique unique très utilisée 
+                            dans les zones urbaines.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- ROOFTOP -->
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="shadow-sm rounded p-4 bg-white h-100">
+
+                        <h4>Rooftop</h4>
+
+                        <p>
+                            Installation sur toiture d’immeuble,
+                            fréquente à Kinshasa, Lubumbashi et Goma.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- RISQUES -->
+    <section class="ve-section">
+
+        <div class="container">
+
+            <div class="ve-section-header text-center">
+
+                <span class="ve-section-tag">Sécurité HSE</span>
+
+                <h2>
+                    Les principaux <span>risques</span>
+                </h2>
+
+                <p>
+                    Les travaux en hauteur font partie des activités les plus dangereuses 
+                    du secteur télécom.
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="shadow-sm rounded p-4 border-start border-danger border-4 h-100">
+
+                        <i class="bi bi-exclamation-triangle-fill fs-1 text-danger"></i>
+
+                        <h4 class="mt-3">Chute de hauteur</h4>
+
+                        <p>
+                            Risque numéro 1 pouvant provoquer fractures,
+                            handicaps graves ou décès.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="shadow-sm rounded p-4 border-start border-warning border-4 h-100">
+
+                        <i class="bi bi-tools fs-1 text-warning"></i>
+
+                        <h4 class="mt-3">Chute d’objets</h4>
+
+                        <p>
+                            Outils ou équipements pouvant tomber 
+                            sur les personnes au sol.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="shadow-sm rounded p-4 border-start border-primary border-4 h-100">
+
+                        <i class="bi bi-lightning-charge-fill fs-1 text-primary"></i>
+
+                        <h4 class="mt-3">Électrocution</h4>
+
+                        <p>
+                            Contact avec câbles électriques, énergie du site
+                            ou lignes haute tension.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-6">
+
+                    <div class="shadow-sm rounded p-4 border-start border-info border-4 h-100">
+
+                        <i class="bi bi-cloud-lightning-rain fs-1 text-info"></i>
+
+                        <h4 class="mt-3">Conditions climatiques</h4>
+
+                        <p>
+                            Vent fort, pluie, orage et forte chaleur augmentent 
+                            considérablement les risques d’accident.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-6">
+
+                    <div class="shadow-sm rounded p-4 border-start border-secondary border-4 h-100">
+
+                        <i class="bi bi-person-fill-exclamation fs-1 text-secondary"></i>
+
+                        <h4 class="mt-3">Fatigue physique</h4>
+
+                        <p>
+                            Très fréquente chez les riggers lors des longues 
+                            interventions sur pylônes et structures élevées.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- EPI -->
+    <section class="ve-section bg-light">
+
+        <div class="container">
+
+            <div class="row align-items-center gap-3">
+
+                <div class="col-lg-5 wow fadeInLeft" data-wow-delay="100ms">
+
+                    <div class="ve-service-detail-img">
+                        <img src="{{ url_for('static', filename='img/securite.jpg') }}" alt="EPI travaux en hauteur">
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 wow fadeInRight" data-wow-delay="200ms">
+
+                    <span class="ve-section-tag">Protection & Sécurité</span>
+
+                    <h2>
+                        Équipements de protection individuelle 
+                        <span>(EPI)</span>
+                    </h2>
+
+                    <p>
+                        Les EPI sont indispensables pour garantir la sécurité 
+                        des techniciens lors des interventions en hauteur.
+                    </p>
+
+                    <ul class="ve-service-benefits">
+
+                        <li>
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            Harnais de sécurité antichute
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            Casque avec jugulaire
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            Longes et mousquetons sécurisés
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            Gants de protection
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            Chaussures antidérapantes
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            Système de ligne de vie
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CTA -->
+    <section class="ve-cta-banner bg-img"
+             style="background-image:url({{ url_for('static', filename='img/travaux_hauteur.jpg') }});">
+
+        <div class="ve-cta-overlay"></div>
+
+        <div class="container ve-cta-content">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-8">
+
+                    <h2>
+                        Des interventions en hauteur réalisées 
+                        avec sécurité, précision et professionnalisme.
+                    </h2>
+
+                    <p>
+                        Nos équipes spécialisées assurent les travaux sur pylônes, 
+                        rooftops et infrastructures télécoms en respectant strictement 
+                        les normes HSE internationales.
+                    </p>
+
+                </div>
+
+                <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+
+                    <a href="/contact" class="ve-btn-white">
+                        Contactez-nous
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+{% endblock %}

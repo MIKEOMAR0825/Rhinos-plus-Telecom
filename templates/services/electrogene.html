@@ -1,0 +1,412 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="ve-page-hero" style="background-image:url({{ url_for('static', filename='img/electro2.jpg') }});">
+    <div class="ve-page-hero-overlay"></div>
+    <div class="container ve-page-hero-content">
+        <span class="ve-section-tag">Maintenance des Groupes Électrogènes</span>
+        <h1>Assurez la continuité énergétique de vos infrastructures critiques</h1>
+
+        <p class="mt-3 text-white">
+            RHINOS PLUS TELECOM accompagne les entreprises, sites télécoms,
+            datacenters et industries avec des solutions professionnelles de
+            maintenance des groupes électrogènes.
+        </p>
+
+        <nav aria-label="breadcrumb">
+            <ol class="ve-breadcrumb">
+                <li><a href="/">Accueil</a></li>
+                <li class="active">Maintenance des Groupes Électrogènes</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<!-- INTRO -->
+<section class="ve-section ve-service-detail-section">
+    <div class="container">
+        <div class="row align-items-center gap-3">
+
+            <div class="col-12 col-lg-6 wow fadeInLeft" data-wow-delay="100ms">
+                <div class="ve-service-detail-content">
+                    <span class="ve-section-tag">Expertise énergétique</span>
+
+                    <h2>
+                        Maintenance professionnelle des
+                        <span>groupes électrogènes</span>
+                    </h2>
+
+                    <p>
+                        La maintenance des groupes électrogènes est un élément
+                        stratégique pour garantir la continuité énergétique des
+                        infrastructures télécoms, des centres de données,
+                        des stations relais, des sites industriels et des
+                        bâtiments administratifs.
+                    </p>
+
+                    <p>
+                        Chez RHINOS PLUS TELECOM, nous proposons des services
+                        professionnels de maintenance préventive, corrective
+                        et curative afin d’assurer la performance, la sécurité
+                        et la longévité de vos équipements énergétiques.
+                    </p>
+
+                    <a href="/contact" class="ve-btn-primary mt-3">
+                        Demander une intervention
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-5 wow fadeInRight" data-wow-delay="200ms">
+                <div class="ve-service-detail-img">
+                    <img src="{{ url_for('static', filename='img/electro5.jpg') }}"
+                         alt="Maintenance des groupes électrogènes">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- IMPORTANCE -->
+<section class="ve-section ve-whyus-section">
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <!-- IMAGE -->
+            <div class="col-12 col-lg-5">
+                <div class="ve-whyus-img-wrap wow fadeInLeft" data-wow-delay="100ms">
+
+                    <div class="ve-whyus-img-main bg-img"
+                         style="background-image:url({{ url_for('static', filename='img/electro7.jpg') }});">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- CONTENT -->
+            <div class="col-12 col-lg-7 wow fadeInRight" data-wow-delay="200ms">
+
+                <div class="ve-whyus-content">
+
+                    <span class="ve-section-tag">
+                        Pourquoi la maintenance est essentielle ?
+                    </span>
+
+                    <h2>
+                        Un groupe électrogène
+                        <span>mal entretenu</span>
+                        peut provoquer :
+                    </h2>
+
+                    <div class="ve-checklist gap-2 mt-4">
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-x-circle"></i>
+                            <div><strong>Des interruptions de service</strong></div>
+                        </div>
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-x-circle"></i>
+                            <div><strong>Des pertes de données et de connectivité</strong></div>
+                        </div>
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-x-circle"></i>
+                            <div><strong>Une surconsommation de carburant</strong></div>
+                        </div>
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-x-circle"></i>
+                            <div><strong>Des pannes critiques</strong></div>
+                        </div>
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-x-circle"></i>
+                            <div><strong>Des coûts élevés de réparation</strong></div>
+                        </div>
+
+                    </div>
+
+                    <div class="mt-4">
+                        <p>
+                            Une maintenance régulière permet d’augmenter la durée
+                            de vie des équipements, de garantir une alimentation
+                            électrique stable et de réduire considérablement les
+                            risques de panne.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="ve-section bg-light">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <span class="ve-section-tag">Nos solutions</span>
+            <h2>Solutions complètes de maintenance</h2>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- SERVICE 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="ve-service-card h-100 wow fadeInUp" data-wow-delay="100ms">
+
+                    <div class="ve-service-icon">
+                        <i class="bi bi-tools"></i>
+                    </div>
+
+                    <h4>Maintenance préventive</h4>
+
+                    <p>
+                        Contrôles réguliers et inspections techniques afin
+                        d’éviter les pannes et garantir le bon fonctionnement
+                        des équipements.
+                    </p>
+
+                    <ul class="ve-service-benefits">
+                        <li><i class="bi bi-check-circle text-warning"></i> Vérification du niveau d’huile</li>
+                        <li><i class="bi bi-check-circle text-warning"></i> Contrôle du refroidissement</li>
+                        <li><i class="bi bi-check-circle text-warning"></i> Inspection des batteries</li>
+                        <li><i class="bi bi-check-circle text-warning"></i> Nettoyage des filtres</li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <!-- SERVICE 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="ve-service-card h-100 wow fadeInUp" data-wow-delay="200ms">
+
+                    <div class="ve-service-icon">
+                        <i class="bi bi-lightning-charge"></i>
+                    </div>
+
+                    <h4>Maintenance corrective</h4>
+
+                    <p>
+                        Intervention rapide en cas de panne ou de dysfonctionnement
+                        afin de remettre vos installations en service dans les
+                        meilleurs délais.
+                    </p>
+
+                    <ul class="ve-service-benefits">
+                        <li><i class="bi bi-check-circle text-warning"></i> Diagnostic des pannes</li>
+                        <li><i class="bi bi-check-circle text-warning"></i> Réparation électrique</li>
+                        <li><i class="bi bi-check-circle text-warning"></i> Remplacement des pièces</li>
+                        <li><i class="bi bi-check-circle text-warning"></i> Tests de redémarrage</li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <!-- SERVICE 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="ve-service-card h-100 wow fadeInUp" data-wow-delay="300ms">
+
+                    <div class="ve-service-icon">
+                        <i class="bi bi-gear-wide-connected"></i>
+                    </div>
+
+                    <h4>Maintenance curative</h4>
+
+                    <p>
+                        Réhabilitation complète des groupes électrogènes anciens
+                        ou fortement endommagés.
+                    </p>
+
+                    <ul class="ve-service-benefits">
+                        <li><i class="bi bi-check-circle text-warning"></i> Révision du moteur</li>
+                        <li><i class="bi bi-check-circle text-warning"></i> Remplacement d’alternateurs</li>
+                        <li><i class="bi bi-check-circle text-warning"></i> Modernisation des tableaux</li>
+                        <li><i class="bi bi-check-circle text-warning"></i> Optimisation énergétique</li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- DOMAINES -->
+<section class="ve-section">
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-12 col-lg-6 wow fadeInLeft" data-wow-delay="100ms">
+
+                <span class="ve-section-tag">Domaines d’intervention</span>
+
+                <h2>
+                    Nous intervenons dans plusieurs
+                    <span>secteurs stratégiques</span>
+                </h2>
+
+                <div class="row mt-4">
+
+                    <div class="col-6">
+                        <ul class="ve-service-benefits">
+                            <li><i class="bi bi-check-circle text-warning"></i> Infrastructures télécoms</li>
+                            <li><i class="bi bi-check-circle text-warning"></i> Stations BTS</li>
+                            <li><i class="bi bi-check-circle text-warning"></i> Datacenters</li>
+                            <li><i class="bi bi-check-circle text-warning"></i> Entreprises privées</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6">
+                        <ul class="ve-service-benefits">
+                            <li><i class="bi bi-check-circle text-warning"></i> Hôpitaux</li>
+                            <li><i class="bi bi-check-circle text-warning"></i> Banques</li>
+                            <li><i class="bi bi-check-circle text-warning"></i> Sites industriels</li>
+                            <li><i class="bi bi-check-circle text-warning"></i> Administrations publiques</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-12 col-lg-6 wow fadeInRight" data-wow-delay="200ms">
+                <div class="ve-service-detail-img">
+                    <img src="{{ url_for('static', filename='img/tenue.jpg') }}"
+                         alt="Domaines d'intervention" style="border-radius: 8px;">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- APPROCHE -->
+<section class="ve-section bg-light">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <span class="ve-section-tag">Notre approche technique</span>
+            <h2>Une méthodologie professionnelle et rigoureuse</h2>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-12 col-md-4">
+                <div class="ve-process-card text-center">
+                    <div class="ve-process-number text-success fw-bold fs-2">01</div>
+                    <h5>Audit Technique</h5>
+                    <p>Analyse complète du groupe électrogène et de ses performances.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="ve-process-card text-center">
+                    <div class="ve-process-number text-success fw-bold fs-2">02</div>
+                    <h5>Intervention</h5>
+                    <p>Maintenance, réparation et remplacement des équipements défectueux.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="ve-process-card text-center">
+                    <div class="ve-process-number text-success fw-bold fs-2">03</div>
+                    <h5>Validation & Suivi</h5>
+                    <p>Tests techniques, rapport détaillé et assistance continue.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="text-center ve-page-hero" style="background-image:url({{ url_for('static', filename='img/electro2.jpg') }});"">
+    <div class="ve-page-hero-overlay"></div>
+
+    <div class="container ve-page-hero-content">
+
+        <span class="ve-section-tag">Besoin d’assistance ?</span>
+
+        <h2 class="text-white">
+            Confiez la maintenance de vos groupes électrogènes
+            à des experts qualifiés
+        </h2>
+
+        <p class="text-white mt-3">
+            RHINOS PLUS TELECOM vous accompagne pour garantir
+            la continuité énergétique et la sécurité de vos installations.
+        </p>
+
+        <div class="mt-4">
+            <a href="/contact" class="ve-btn-primary">
+                Contactez-nous
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- AVANTAGES -->
+<section class="ve-section">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <span class="ve-section-tag">Pourquoi nous choisir ?</span>
+            <h2>Les avantages RHINOS PLUS TELECOM</h2>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="ve-feature-box text-center">
+                    <i class="bi bi-people text-success" style="font-size: 2.7rem;"></i>
+                    <h5>Équipe qualifiée</h5>
+                    <p>Des techniciens expérimentés et certifiés.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="ve-feature-box text-center">
+                    <i class="bi bi-clock-history text-primary" style="font-size: 2.7rem;"></i>
+                    <h5>Intervention rapide</h5>
+                    <p>Disponibilité et réactivité sur tous les sites.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="ve-feature-box text-center">
+                    <i class="bi bi-cpu text-warning" style="font-size: 2.7rem;"></i>
+                    <h5>Support technique</h5>
+                    <p>Assistance continue et suivi périodique.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="ve-feature-box text-center">
+                    <i class="bi bi-shield-check text-danger" style="font-size: 2.7rem;"></i>
+                    <h5>Normes de sécurité</h5>
+                    <p>Respect des standards de qualité et de sécurité.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+{% endblock %}

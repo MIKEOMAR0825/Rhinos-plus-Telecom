@@ -1,0 +1,181 @@
+{% extends "base.html" %}
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+
+        {% for category, message in messages %}
+
+            <div class="alert alert-{{ category }}">
+                {{ message }}
+            </div>
+
+        {% endfor %}
+
+    {% endif %}
+{% endwith %}
+
+{% block content %}
+
+    <section class="ve-page-hero" style="background-image:url( {{ url_for('static', filename='img/contact.JPG') }} );">
+        <div class="ve-page-hero-overlay"></div>
+        <div class="container ve-page-hero-content">
+            <span class="ve-section-tag">Entrer en contact</span>
+            <h1>Nous serions ravis d' <span>avoir de vos nouvelles.</span></h1>
+            <nav aria-label="breadcrumb"><ol class="ve-breadcrumb"><li><a href="/">Accueil</a></li><li class="">Contact</li></ol></nav>
+        </div>
+    </section>
+
+
+
+    <section class="ve-contact-cards-section">
+        <div class="container">
+            <div class="ve-contact-cards-grid">
+                <div class="ve-contact-info-card wow fadeInUp" data-wow-delay="100ms"><div class="ve-ci-icon"><i class="bi bi-map"></i></div><h5>Visitez notre bureau</h5><p>Avenue Nyangwe 225, Commune de Lingwala</p></div>
+                <div class="ve-contact-info-card wow fadeInUp" data-wow-delay="250ms"><div class="ve-ci-icon"><i class="bi bi-phone"></i></div><h5>Appelez-nous</h5><p>+243 813 204 632<br><small>Lundi – Vendredi, 8h – 16h</small></p></div>
+                <div class="ve-contact-info-card wow fadeInUp" data-wow-delay="400ms"><div class="ve-ci-icon"><i class="bi bi-envelope"></i></div><h5>Envoyez-nous un email</h5><p>rhinosplus@outlook.fr<br><small>Nous répondons instantanément</small></p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ve-section ve-contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-7 wow fadeInLeft" data-wow-delay="100ms">
+                    <div class="ve-contact-form-wrap">
+                        <span class="ve-section-tag">Envoyer un message</span>
+                        <h2>Réservez une <span>consultation gratuite</span></h2>
+                        <p>Remplissez le formulaire et l'un de nos conseillers vous contactera dans l'heure.</p>
+
+                        <form class="ve-contact-form" action="{{ url_for('contact') }}" method="POST">
+
+                            <div class="ve-form-row">
+
+                                <div class="ve-form-group">
+
+                                    <label>Nom complet</label>
+
+                                    <input type="text" name="full_name" placeholder="Votre nom complet" required>
+
+                                </div>
+
+                                <div class="ve-form-group">
+
+                                    <label>Adresse email</label>
+
+                                    <input type="email" name="email" placeholder="Votre email" required>
+
+                                </div>
+
+                            </div>
+
+                            <div class="ve-form-row">
+
+                                <div class="ve-form-group">
+
+                                    <label>Numéro de téléphone</label>
+
+                                    <input type="tel" name="phone" placeholder="Votre téléphone">
+
+                                </div>
+
+                                <div class="ve-form-group">
+
+                                    <label>Service d'intérêt</label>
+
+                                    <select name="service">
+
+                                        <option>
+                                            Déploiement et construction d’infrastructure
+                                        </option>
+
+                                        <option>
+                                            Installation et intégration d'équipements
+                                        </option>
+
+                                        <option>
+                                            Maintenance et exploitation
+                                        </option>
+
+                                        <option>
+                                            Solutions énergétiques et électriques
+                                        </option>
+
+                                        <option>
+                                            Travail en hauteur
+                                        </option>
+
+                                        <option>
+                                            Fibre optique
+                                        </option>
+
+                                        <option>
+                                            Optimisation
+                                        </option>
+
+                                        <option>
+                                            Audit
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <div class="ve-form-group">
+
+                                <label>Votre message</label>
+
+                                <textarea name="message" rows="5" placeholder="Entrez votre message..." required></textarea>
+
+                            </div>
+
+                            <button type="submit" class="ve-btn-primary">
+
+                                Envoyer le message
+
+                                <i class="bi bi-paper-plane"></i>
+
+                            </button>
+
+                        </form>
+
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 wow fadeInRight" data-wow-delay="200ms">
+                    <div class="ve-contact-aside">
+                        <div class="ve-ca-box">
+                            <h4>Pourquoi nos clients nous choisissent</h4>
+                            <ul class="ve-ca-list">
+                                <li><i class="bi bi-check-circle"></i> Innovation</li>
+                                <li><i class="bi bi-check-circle"></i> Fiabilité</li>
+                                <li><i class="bi bi-check-circle"></i> Intégrité</li>
+                                <li><i class="bi bi-check-circle"></i> Excellence</li>
+                                <li><i class="bi bi-check-circle"></i> Accessibilité</li>
+                            </ul>
+                        </div>
+                        <div class="ve-ca-hours">
+                            <h5><i class="bi bi-clock"></i> Heures de service</h5>
+                            <ul>
+                                <li><span>Lundi – Vendredi</span><strong>8:00 – 17:00</strong></li>
+                                <li><span>Samedi</span><strong>08:00 – 12:00</strong></li>
+                                <li><span>Dimanche</span><strong>Fermé</strong></li>
+                            </ul>
+                        </div>
+                        <div class="ve-ca-social">
+                            <h5>Contactez-nous</h5>
+                            <div class="ve-social">
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-twitter"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+{% endblock %}

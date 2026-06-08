@@ -1,0 +1,534 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <!-- HERO -->
+    <section class="ve-page-hero" style="background-image:url({{ url_for('static', filename='img/fibre_optique.jpg') }});">
+
+        <div class="ve-page-hero-overlay"></div>
+
+        <div class="container ve-page-hero-content">
+
+            <span class="ve-section-tag">Fibre Optique</span>
+
+            <h1>
+                La technologie de transmission à 
+                <span>très haut débit</span> qui constitue 
+                la colonne vertébrale des réseaux télécoms modernes.
+            </h1>
+
+            <nav aria-label="breadcrumb">
+
+                <ol class="ve-breadcrumb">
+                    <li><a href="/">Accueil</a></li>
+                    <li class="active">Fibre Optique</li>
+                </ol>
+
+            </nav>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- INTRO -->
+    <section class="ve-section ve-service-detail-section">
+
+        <div class="container">
+
+            <div class="row align-items-center gap-2">
+
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="100ms">
+
+                    <span class="ve-section-tag">Technologie Télécom</span>
+
+                    <h2>
+                        La fibre optique : le cœur des réseaux 
+                        <span>modernes</span>
+                    </h2>
+
+                    <p>
+                        La fibre optique est aujourd’hui la technologie la plus performante 
+                        pour la transmission des données à très haut débit.
+                    </p>
+
+                    <p>
+                        Elle constitue la colonne vertébrale des infrastructures modernes :
+                        Internet, téléphonie mobile, data centers, banques, télévision,
+                        entreprises et réseaux gouvernementaux.
+                    </p>
+
+                    <p>
+                        Dans le secteur télécom, la fibre optique joue un rôle stratégique 
+                        grâce à sa capacité de transmettre d’énormes volumes de données 
+                        avec stabilité, rapidité et fiabilité.
+                    </p>
+
+                    <div class="ve-checklist mt-4">
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <div>Très haut débit de transmission</div>
+                        </div>
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <div>Faible perte de signal</div>
+                        </div>
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <div>Transmission stable et sécurisée</div>
+                        </div>
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <div>Grande capacité de données</div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-5 mt-4 mt-lg-0 wow fadeInRight" data-wow-delay="200ms">
+
+                    <div class="ve-service-detail-img">
+
+                        <img src="{{ url_for('static', filename='img/trav_haut.jpg') }}"
+                             alt="Fibre optique">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- DEFINITION -->
+    <section class="ve-section bg-light">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-10 text-center">
+
+                    <span class="ve-section-tag">Définition</span>
+
+                    <h2>
+                        Qu’est-ce que la 
+                        <span>fibre optique</span> ?
+                    </h2>
+
+                    <p class="mt-4">
+                        La fibre optique est un câble constitué de très fines fibres 
+                        en verre ou en plastique capables de transmettre des informations 
+                        sous forme de lumière.
+                    </p>
+
+                    <div class="shadow-sm rounded p-5 bg-white mt-4">
+
+                        <h4 class="fw-bold">
+                            Contrairement aux câbles cuivre, la fibre utilise des 
+                            <span class="text-primary">signaux lumineux</span>
+                            permettant des transmissions extrêmement rapides.
+                        </h4>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FONCTIONNEMENT -->
+    <section class="ve-section">
+
+        <div class="container">
+
+            <div class="ve-section-header text-center">
+
+                <span class="ve-section-tag">Principe de fonctionnement</span>
+
+                <h2>
+                    Comment fonctionne la 
+                    <span>fibre optique</span> ?
+                </h2>
+
+            </div>
+
+            <div class="row g-4 justify-content-center">
+
+                <div class="col-md-4">
+
+                    <div class="shadow-sm rounded p-5 text-center h-100">
+
+                        <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-4"
+                             style="width:80px;height:80px;">
+
+                            <i class="bi bi-hdd-network fs-2"></i>
+
+                        </div>
+
+                        <h4>Données numériques</h4>
+
+                        <p>
+                            Les informations sont générées sous forme de données numériques.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="shadow-sm rounded p-5 text-center h-100">
+
+                        <div class="rounded-circle bg-success text-white d-inline-flex align-items-center justify-content-center mb-4"
+                             style="width:80px;height:80px;">
+
+                            <i class="bi bi-lightbulb fs-2"></i>
+
+                        </div>
+
+                        <h4>Impulsions lumineuses</h4>
+
+                        <p>
+                            Les données sont transformées en impulsions lumineuses.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="shadow-sm rounded p-5 text-center h-100">
+
+                        <div class="rounded-circle bg-warning text-white d-inline-flex align-items-center justify-content-center mb-4"
+                             style="width:80px;height:80px;">
+
+                            <i class="bi bi-lightning-charge fs-2"></i>
+
+                        </div>
+
+                        <h4>Transmission ultra rapide</h4>
+
+                        <p>
+                            La lumière voyage dans la fibre à très grande vitesse.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- COMPOSITION -->
+    <section class="ve-section ve-services-section bg-light">
+
+        <div class="container">
+
+            <div class="ve-section-header text-center">
+
+                <span class="ve-section-tag">Structure Fibre</span>
+
+                <h2>
+                    Composition d’un câble 
+                    <span>fibre optique</span>
+                </h2>
+
+            </div>
+
+            <div class="row g-4">
+
+                <!-- CORE -->
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="shadow-sm rounded bg-white p-4 h-100">
+
+                        <div class="mb-3">
+                            <i class="bi bi-dot fs-1 text-primary"></i>
+                        </div>
+
+                        <h4>Le cœur (Core)</h4>
+
+                        <p>
+                            Partie centrale du câble qui transporte 
+                            les signaux lumineux.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- CLADDING -->
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="shadow-sm rounded bg-white p-4 h-100">
+
+                        <div class="mb-3">
+                            <i class="bi bi-circle fs-1 text-success"></i>
+                        </div>
+
+                        <h4>Gaine optique</h4>
+
+                        <p>
+                            Permet à la lumière de rester confinée 
+                            à l’intérieur de la fibre.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- PROTECTION -->
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="shadow-sm rounded bg-white p-4 h-100">
+
+                        <div class="mb-3">
+                            <i class="bi bi-shield-check fs-1 text-warning"></i>
+                        </div>
+
+                        <h4>Revêtement</h4>
+
+                        <p>
+                            Protège la fibre contre l’humidité,
+                            les chocs et la pression.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- ARMURE -->
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="shadow-sm rounded bg-white p-4 h-100">
+
+                        <div class="mb-3">
+                            <i class="bi bi-lock-fill fs-1 text-danger"></i>
+                        </div>
+
+                        <h4>Armure</h4>
+
+                        <p>
+                            Protection mécanique renforcée,
+                            très importante pour les déploiements en RDC.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- AVANTAGES -->
+    <section class="ve-section">
+
+        <div class="container">
+
+            <div class="row align-items-center gap-3">
+
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="100ms">
+
+                    <div class="ve-service-detail-img">
+
+                        <img src="{{ url_for('static', filename='img/inst_reseau3.jpg') }}"
+                             alt="Réseau fibre optique" class="rounded">
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-5 wow fadeInRight" data-wow-delay="200ms">
+
+                    <span class="ve-section-tag">Avantages</span>
+
+                    <h2>
+                        Pourquoi la fibre optique est 
+                        <span>indispensable</span> ?
+                    </h2>
+
+                    <ul class="ve-service-benefits mt-4">
+
+                        <li>
+                            <i class="bi bi-check-circle-fill text-primary"></i>
+                            Débits très élevés pour Internet et data centers
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill text-primary"></i>
+                            Transmission stable sur de longues distances
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill text-primary"></i>
+                            Très faible atténuation du signal
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill text-primary"></i>
+                            Immunité aux interférences électromagnétiques
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill text-primary"></i>
+                            Grande capacité de transport de données
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill text-primary"></i>
+                            Haute sécurité des communications
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CTA -->
+    <section class="ve-cta-banner bg-img"
+             style="background-image:url({{ url_for('static', filename='img/fibre_optique.jpg') }});">
+
+        <div class="ve-cta-overlay"></div>
+
+        <div class="container ve-cta-content">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-8">
+
+                    <h2>
+                        Déployez des infrastructures télécoms 
+                        performantes avec la fibre optique.
+                    </h2>
+
+                    <p>
+                        Nous accompagnons les opérateurs, entreprises et institutions 
+                        dans le déploiement, l’installation et la maintenance des 
+                        réseaux fibre optique à très haute capacité.
+                    </p>
+
+                </div>
+
+                <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+
+                    <a href="/contact" class="ve-btn-white">
+                        Contactez-nous
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    
+    <!-- DOMAINES -->
+    <section class="ve-section bg-light">
+
+        <div class="container">
+
+            <div class="ve-section-header text-center">
+
+                <span class="ve-section-tag">Applications</span>
+
+                <h2>
+                    Utilisation dans les réseaux 
+                    <span>modernes</span>
+                </h2>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+
+                    <div class="shadow-sm rounded p-4 bg-white h-100 text-center">
+
+                        <i class="bi bi-globe2 fs-1 text-primary"></i>
+
+                        <h4 class="mt-3">Internet Haut Débit</h4>
+
+                        <p>
+                            Backbone Internet et réseaux FTTH.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="shadow-sm rounded p-4 bg-white h-100 text-center">
+
+                        <i class="bi bi-broadcast fs-1 text-success"></i>
+
+                        <h4 class="mt-3">Téléphonie Mobile</h4>
+
+                        <p>
+                            Interconnexion des sites BTS et réseaux 4G/5G.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="shadow-sm rounded p-4 bg-white h-100 text-center">
+
+                        <i class="bi bi-server fs-1 text-warning"></i>
+
+                        <h4 class="mt-3">Data Centers</h4>
+
+                        <p>
+                            Transmission ultra rapide entre équipements critiques.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,542 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <!-- HERO -->
+    <section class="ve-page-hero" style="background-image:url( {{ url_for('static', filename='img/optimisation.jpg') }} );">
+        <div class="ve-page-hero-overlay"></div>
+
+        <div class="container ve-page-hero-content">
+
+            <span class="ve-section-tag">Optimisation Télécom</span>
+
+            <h1>
+                Améliorer la <span>performance</span>, la 
+                <span>stabilité</span> et la 
+                <span>qualité</span> des réseaux télécoms.
+            </h1>
+
+            <nav aria-label="breadcrumb">
+                <ol class="ve-breadcrumb">
+                    <li><a href="/">Accueil</a></li>
+                    <li class="active">Optimisation Télécom</li>
+                </ol>
+            </nav>
+
+        </div>
+    </section>
+
+
+
+    <!-- INTRO -->
+    <section class="ve-section ve-service-detail-section">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="100ms">
+
+                    <span class="ve-section-tag">Performance Réseau</span>
+
+                    <h2>
+                        L’optimisation des réseaux 
+                        <span>télécoms modernes</span>
+                    </h2>
+
+                    <p>
+                        L’optimisation télécom regroupe l’ensemble des opérations techniques 
+                        permettant d’améliorer les performances, la qualité de service, 
+                        la stabilité et l’efficacité d’un réseau de télécommunications.
+                    </p>
+
+                    <p>
+                        Après le déploiement d’un réseau, le travail ne s’arrête pas. 
+                        Les infrastructures doivent être surveillées, ajustées, calibrées 
+                        et continuellement améliorées afin de garantir une excellente 
+                        expérience utilisateur.
+                    </p>
+
+                    <div class="ve-checklist mt-4">
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <div>Amélioration de la couverture réseau</div>
+                        </div>
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <div>Optimisation des performances Internet</div>
+                        </div>
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <div>Réduction des coupures et interférences</div>
+                        </div>
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <div>Analyse et monitoring des KPI réseau</div>
+                        </div>
+
+                        <div class="ve-check-item">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <div>Amélioration continue de l’expérience utilisateur</div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 wow fadeInRight mt-4 mt-lg-0" data-wow-delay="200ms">
+
+                    <div class="ve-service-detail-img">
+                        <img src="{{ url_for('static', filename='img/optimisation.jpg') }}" alt="Optimisation Télécom">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- OBJECTIFS -->
+    <section class="ve-section bg-light">
+
+        <div class="container">
+
+            <div class="ve-section-header text-center">
+
+                <span class="ve-section-tag">Objectif Principal</span>
+
+                <h2>
+                    Garantir une <span>expérience réseau optimale</span>
+                </h2>
+
+                <p>
+                    L’optimisation vise à garantir une connectivité rapide, stable et performante 
+                    pour tous les utilisateurs du réseau.
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="shadow-sm rounded p-4 bg-white h-100 text-center">
+
+                        <i class="bi bi-wifi fs-1 text-primary"></i>
+
+                        <h4 class="mt-3">Bon Signal</h4>
+
+                        <p>
+                            Garantir une couverture radio stable et puissante.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="shadow-sm rounded p-4 bg-white h-100 text-center">
+
+                        <i class="bi bi-speedometer2 fs-1 text-success"></i>
+
+                        <h4 class="mt-3">Internet Rapide</h4>
+
+                        <p>
+                            Améliorer le débit et réduire la latence réseau.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="shadow-sm rounded p-4 bg-white h-100 text-center">
+
+                        <i class="bi bi-telephone-fill fs-1 text-warning"></i>
+
+                        <h4 class="mt-3">Appels Stables</h4>
+
+                        <p>
+                            Réduire les appels coupés et améliorer la QoS.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="shadow-sm rounded p-4 bg-white h-100 text-center">
+
+                        <i class="bi bi-emoji-smile-fill fs-1 text-danger"></i>
+
+                        <h4 class="mt-3">Satisfaction Client</h4>
+
+                        <p>
+                            Offrir une excellente expérience utilisateur.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- IMPORTANCE -->
+    <section class="ve-section">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+
+                    <div class="ve-service-detail-img">
+                        <img src="{{ url_for('static', filename='img/optimisation2.jpg') }}" alt="Optimisation réseau" class="rounded">
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 mt-4 mt-lg-0">
+
+                    <span class="ve-section-tag">Pourquoi l’optimisation ?</span>
+
+                    <h2>
+                        Corriger les problèmes et améliorer les 
+                        <span>performances réseau</span>
+                    </h2>
+
+                    <p>
+                        Même après la construction d’un site télécom, plusieurs problèmes 
+                        peuvent apparaître : faible signal, congestion réseau, lenteur Internet, 
+                        interférences ou saturation des antennes.
+                    </p>
+
+                    <p>
+                        L’optimisation permet d’identifier rapidement ces anomalies 
+                        afin d’améliorer les performances globales du réseau.
+                    </p>
+
+                    <ul class="ve-service-benefits mt-4">
+
+                        <li>
+                            <i class="bi bi-check-circle-fill text-warning"></i>
+                            Réduction des appels coupés
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill text-warning"></i>
+                            Amélioration du débit Internet
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill text-warning"></i>
+                            Diminution des interférences radio
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill text-warning"></i>
+                            Optimisation de la capacité réseau
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill text-warning"></i>
+                            Stabilisation des performances télécoms
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- TYPES -->
+    <section class="ve-section ve-services-section bg-light">
+
+        <div class="container">
+
+            <div class="ve-section-header text-center">
+
+                <span class="ve-section-tag">Types d’Optimisation</span>
+
+                <h2>
+                    Différentes formes d’<span>optimisation télécom</span>
+                </h2>
+
+            </div>
+
+            <div class="row g-4">
+
+                <!-- RADIO -->
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="shadow-sm rounded bg-white overflow-hidden h-100">
+
+                        <div class="bg-primary text-white text-center p-3">
+                            <i class="bi bi-broadcast fs-1"></i>
+                            <h4 class="mt-2 mb-0 text-light">Optimisation Radio</h4>
+                        </div>
+
+                        <div class="p-4">
+
+                            <p>
+                                Concerne les antennes, la couverture, la qualité du signal 
+                                et les performances du réseau mobile.
+                            </p>
+
+                            <h6 class="fw-bold mt-4">Objectifs :</h6>
+
+                            <ul class="ve-service-benefits">
+
+                                <li><i class="bi bi-check-circle-fill text-primary"></i> Améliorer la couverture</li>
+                                <li><i class="bi bi-check-circle-fill text-primary"></i> Augmenter la capacité</li>
+                                <li><i class="bi bi-check-circle-fill text-primary"></i> Optimiser la qualité des appels</li>
+                                <li><i class="bi bi-check-circle-fill text-primary"></i> Améliorer le débit data</li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- TRANSMISSION -->
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="shadow-sm rounded bg-white overflow-hidden h-100">
+
+                        <div class="bg-success text-white text-center p-3">
+                            <i class="bi bi-diagram-3-fill fs-1"></i>
+                            <h4 class="mt-2 mb-0 text-light">Transmission</h4>
+                        </div>
+
+                        <div class="p-4">
+
+                            <p>
+                                Optimisation des liaisons fibre optique, faisceaux hertziens 
+                                et backbone IP.
+                            </p>
+
+                            <h6 class="fw-bold mt-4">Objectifs :</h6>
+
+                            <ul class="ve-service-benefits">
+
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Réduire la latence</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Réduire les pertes</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Éviter les coupures</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Stabiliser le transport data</li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- ENERGIE -->
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="shadow-sm rounded bg-white overflow-hidden h-100">
+
+                        <div class="bg-warning text-white text-center p-3">
+                            <i class="bi bi-lightning-charge-fill fs-1"></i>
+                            <h4 class="mt-2 mb-0 text-light">Énergie</h4>
+                        </div>
+
+                        <div class="p-4">
+
+                            <p>
+                                Très importante pour assurer une alimentation stable 
+                                des infrastructures télécoms.
+                            </p>
+
+                            <h6 class="fw-bold mt-4">Objectifs :</h6>
+
+                            <ul class="ve-service-benefits">
+
+                                <li><i class="bi bi-check-circle-fill text-warning"></i> Réduire les pannes énergie</li>
+                                <li><i class="bi bi-check-circle-fill text-warning"></i> Réduire les coûts carburant</li>
+                                <li><i class="bi bi-check-circle-fill text-warning"></i> Optimiser l’autonomie batteries</li>
+                                <li><i class="bi bi-check-circle-fill text-warning"></i> Stabiliser l’alimentation</li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- IP -->
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="shadow-sm rounded bg-white overflow-hidden h-100">
+
+                        <div class="bg-danger text-white text-center p-3">
+                            <i class="bi bi-router-fill fs-1"></i>
+                            <h4 class="mt-2 mb-0 text-light">IP & Data</h4>
+                        </div>
+
+                        <div class="p-4">
+
+                            <p>
+                                Optimisation des routeurs, switches et du trafic Internet.
+                            </p>
+
+                            <h6 class="fw-bold mt-4">Objectifs :</h6>
+
+                            <ul class="ve-service-benefits">
+
+                                <li><i class="bi bi-check-circle-fill text-danger"></i> Améliorer la vitesse</li>
+                                <li><i class="bi bi-check-circle-fill text-danger"></i> Fluidifier le trafic</li>
+                                <li><i class="bi bi-check-circle-fill text-danger"></i> Stabiliser le réseau</li>
+                                <li><i class="bi bi-check-circle-fill text-danger"></i> Optimiser les performances IP</li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- KPI -->
+    <section class="ve-section">
+
+        <div class="container">
+
+            <div class="ve-section-header text-center">
+
+                <span class="ve-section-tag">Performance Réseau</span>
+
+                <h2>
+                    Indicateurs clés de <span>l’optimisation</span>
+                </h2>
+
+            </div>
+
+            <div class="row g-4 justify-content-center">
+
+                <div class="col-md-3">
+
+                    <div class="shadow-sm rounded p-4 text-center">
+
+                        <h2 class="fw-bold text-primary">99.9%</h2>
+                        <p>Disponibilité Réseau</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="shadow-sm rounded p-4 text-center">
+
+                        <h2 class="fw-bold text-success">4G / 5G</h2>
+                        <p>Optimisation Mobile</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="shadow-sm rounded p-4 text-center">
+
+                        <h2 class="fw-bold text-warning">24/7</h2>
+                        <p>Monitoring Continu</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="shadow-sm rounded p-4 text-center">
+
+                        <h2 class="fw-bold text-danger">QoS</h2>
+                        <p>Qualité de Service</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CTA -->
+    <section class="ve-cta-banner bg-img"
+             style="background-image:url( {{ url_for('static', filename='img/optimisation.jpg') }} );">
+
+        <div class="ve-cta-overlay"></div>
+
+        <div class="container ve-cta-content">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-8">
+
+                    <h2>
+                        Besoin d’optimiser vos infrastructures télécoms ?
+                    </h2>
+
+                    <p>
+                        RHINOS PLUS TELECOM vous accompagne dans l’analyse, 
+                        l’amélioration et l’optimisation complète de vos réseaux 
+                        afin de garantir stabilité, performance et qualité de service.
+                    </p>
+
+                </div>
+
+                <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+
+                    <a href="/contact" class="ve-btn-white">
+                        Contactez-nous
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+{% endblock %}

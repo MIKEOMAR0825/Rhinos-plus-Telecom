@@ -1,0 +1,37 @@
+    
+
+    <section class="ve-newsletter-section">
+        <div class="container">
+            <div class="ve-newsletter-wrap">
+                <div class="ve-nl-left">
+                    <i class="bi bi-envelope"></i>
+                    <div>
+                        <h3>Pour rester informé</h3>
+                        <p>Entrez votre adresse email pour recevoir nos dernières actualités et offres exclusives.</p>
+                    </div>
+                </div>
+
+                <div class="ve-nl-right">
+                    <form class="ve-nl-form gap-1"
+                        action="{{ url_for('newsletter') }}"
+                        method="POST">
+
+                        <div class="col">
+                            <input type="email"
+                                name="email"
+                                placeholder="Entrer votre adresse email"
+                                required>
+                        </div>
+
+                        <div class="col">
+                            <button type="submit">
+                                S'abonner
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </section>

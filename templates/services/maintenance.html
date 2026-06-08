@@ -1,0 +1,626 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <!-- HERO -->
+    <section class="ve-page-hero" style="background-image:url( {{ url_for('static', filename='img/maintenance.jpg') }} );">
+        <div class="ve-page-hero-overlay"></div>
+
+        <div class="container ve-page-hero-content">
+            <span class="ve-section-tag">Maintenance • Exploitation • Intégration Télécom</span>
+
+            <h1>
+                Assurer la disponibilité, la stabilité et la performance des 
+                infrastructures télécoms <span>24h/24</span> et <span>7j/7</span>.
+            </h1>
+
+            <nav aria-label="breadcrumb">
+                <ol class="ve-breadcrumb">
+                    <li><a href="/">Accueil</a></li>
+                    <li class="active">Maintenance & Exploitation</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+
+
+    <!-- INTRO -->
+    <section class="ve-section ve-service-detail-section">
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="100ms">
+
+                    <span class="ve-section-tag">Le cœur opérationnel des réseaux</span>
+
+                    <h2>
+                        La maintenance et l’exploitation dans le 
+                        <span>secteur télécom</span>
+                    </h2>
+
+                    <p>
+                        La maintenance et l’exploitation constituent le cœur 
+                        opérationnel des réseaux de télécommunications.
+                        Après la construction et le déploiement des infrastructures,
+                        il est indispensable d’assurer leur fonctionnement permanent,
+                        leur stabilité et leur performance.
+                    </p>
+
+                    <p>
+                        Dans le secteur télécom, les réseaux doivent fonctionner
+                        sans interruption afin de garantir la connectivité,
+                        les services voix, Internet et data pour les utilisateurs.
+                    </p>
+
+                    <div class="row mt-4 g-3">
+
+                        <div class="col-md-4">
+                            <div class="shadow-sm rounded text-center p-4 bg-white">
+                                <h2 class="fw-bold text-primary">24h/24</h2>
+                                <p class="mb-0">Supervision</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="shadow-sm rounded text-center p-4 bg-white">
+                                <h2 class="fw-bold text-success">7j/7</h2>
+                                <p class="mb-0">Disponibilité</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="shadow-sm rounded text-center p-4 bg-white">
+                                <h2 class="fw-bold text-danger">100%</h2>
+                                <p class="mb-0">Engagement</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-5 wow fadeInRight" data-wow-delay="200ms">
+
+                    <div class="ve-service-detail-img">
+                        <img src="{{ url_for('static', filename='img/maintenance2.jpg') }}" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MAINTENANCE / EXPLOITATION -->
+    <section class="ve-section bg-light">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <!-- MAINTENANCE -->
+                <div class="col-lg-6">
+
+                    <div class="shadow-sm rounded bg-white h-100 overflow-hidden border">
+
+                        <div class="bg-primary text-white p-3">
+                            <h3 class="mb-0 text-light text-center">
+                                1. Qu’est-ce que la maintenance télécom ?
+                            </h3>
+                        </div>
+
+                        <div class="p-4">
+
+                            <p>
+                                La maintenance télécom regroupe l’ensemble des 
+                                opérations techniques visant à :
+                            </p>
+
+                            <ul class="ve-service-benefits">
+
+                                <li>
+                                    <i class="bi bi-check-circle-fill text-primary"></i>
+                                    Maintenir les équipements en bon état
+                                </li>
+
+                                <li>
+                                    <i class="bi bi-check-circle-fill text-primary"></i>
+                                    Prévenir les pannes
+                                </li>
+
+                                <li>
+                                    <i class="bi bi-check-circle-fill text-primary"></i>
+                                    Réparer les anomalies
+                                </li>
+
+                                <li>
+                                    <i class="bi bi-check-circle-fill text-primary"></i>
+                                    Garantir la continuité du service
+                                </li>
+
+                            </ul>
+
+                            <hr>
+
+                            <h5 class="fw-bold mt-4">🎯 Objectifs de la maintenance</h5>
+
+                            <div class="row g-3 mt-2">
+
+                                <div class="col-md-6">
+                                    <div class="border rounded p-3 h-100">
+                                        ✅ Réduire les pannes
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="border rounded p-3 h-100">
+                                        ✅ Assurer la disponibilité réseau
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="border rounded p-3 h-100">
+                                        ✅ Prolonger la durée de vie des équipements
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="border rounded p-3 h-100">
+                                        ✅ Réduire les coûts d’exploitation
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- EXPLOITATION -->
+                <div class="col-lg-6">
+
+                    <div class="shadow-sm rounded bg-white h-100 overflow-hidden border">
+
+                        <div class="bg-success text-white p-3">
+                            <h3 class="mb-0 text-light text-center">
+                                2. Qu’est-ce que l’exploitation télécom ?
+                            </h3>
+                        </div>
+
+                        <div class="p-4">
+
+                            <p>
+                                L’exploitation consiste à superviser, gérer,
+                                contrôler et faire fonctionner quotidiennement
+                                les infrastructures télécoms.
+                            </p>
+
+                            <div class="row g-3 mt-2">
+
+                                <div class="col-md-6">
+                                    <div class="shadow-sm rounded p-3 text-center">
+                                        <i class="bi bi-lightning-charge fs-2 text-warning"></i>
+                                        <p class="mt-2 mb-0">Énergie</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="shadow-sm rounded p-3 text-center">
+                                        <i class="bi bi-diagram-3 fs-2 text-primary"></i>
+                                        <p class="mt-2 mb-0">Réseau</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="shadow-sm rounded p-3 text-center">
+                                        <i class="bi bi-shield-lock fs-2 text-danger"></i>
+                                        <p class="mt-2 mb-0">Sécurité</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="shadow-sm rounded p-3 text-center">
+                                        <i class="bi bi-activity fs-2 text-success"></i>
+                                        <p class="mt-2 mb-0">Performance</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <hr>
+
+                            <h5 class="fw-bold mt-4">🎯 Objectif de l’exploitation</h5>
+
+                            <ul class="ve-service-benefits">
+
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Les abonnés restent connectés</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Le réseau fonctionne correctement</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Les incidents sont rapidement traités</li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TYPES DE MAINTENANCE -->
+    <section class="ve-section">
+
+        <div class="container">
+
+            <div class="ve-section-header text-center">
+                <span class="ve-section-tag">Types de maintenance</span>
+                <h2>Interventions adaptées aux <span>infrastructures télécoms</span></h2>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- PREVENTIVE -->
+                <div class="col-lg-4">
+
+                    <div class="shadow-sm rounded h-100 border overflow-hidden">
+
+                        <div class="bg-success text-white p-3 text-center">
+                            <h4 class="mb-0 text-light">Maintenance Préventive</h4>
+                        </div>
+
+                        <div class="p-4">
+
+                            <p class="fw-bold">📌 Principe</p>
+
+                            <p>
+                                Intervenir avant la panne afin d’éviter
+                                les interruptions de service.
+                            </p>
+
+                            <ul class="ve-service-benefits">
+
+                                <li><i class="bi bi-check-circle-fill text-light"></i> Nettoyage équipements</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Contrôle batteries</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Vidange groupe électrogène</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Serrage câbles</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Inspection pylône<success
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- CORRECTIVE -->
+                <div class="col-lg-4">
+
+                    <div class="shadow-sm rounded h-100 border overflow-hidden">
+
+                        <div class="bg-danger text-white p-3 text-center">
+                            <h4 class="mb-0 text-light">Maintenance Corrective</h4>
+                        </div>
+
+                        <div class="p-4">
+
+                            <p class="fw-bold">📌 Principe</p>
+
+                            <p>
+                                Intervention rapide après panne pour rétablir
+                                les services réseau.
+                            </p>
+
+                            <ul class="ve-service-benefits">
+
+                                <li><i class="bi bi-check-circle-fill text-danger"></i> Remplacement batterie</li>
+                                <li><i class="bi bi-check-circle-fill text-danger"></i> Réparation fibre coupée</li>
+                                <li><i class="bi bi-check-circle-fill text-danger"></i> Changement module radio</li>
+                                <li><i class="bi bi-check-circle-fill text-danger"></i> Diagnostic incident</li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- PREDICTIVE -->
+                <div class="col-lg-4">
+
+                    <div class="shadow-sm rounded h-100 border overflow-hidden">
+
+                        <div class="bg-warning text-dark p-3 text-center">
+                            <h4 class="mb-0">Maintenance Prédictive</h4>
+                        </div>
+
+                        <div class="p-4">
+
+                            <p class="fw-bold">📌 Principe</p>
+
+                            <p>
+                                Utilisation des technologies modernes pour
+                                prédire les pannes avant qu’elles n’arrivent.
+                            </p>
+
+                            <ul class="ve-service-benefits">
+
+                                <li><i class="bi bi-cpu-fill"></i> Intelligence artificielle</li>
+                                <li><i class="bi bi-wifi"></i> Monitoring temps réel</li>
+                                <li><i class="bi bi-bar-chart-fill"></i> Analyse des données</li>
+                                <li><i class="bi bi-broadcast"></i> Capteurs intelligents</li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- INSTALLATION ET INTEGRATION -->
+    <section class="ve-section ve-services-section bg-light">
+
+        <div class="container">
+
+            <div class="ve-section-header text-center">
+                <span class="ve-section-tag">Déploiement Télécom</span>
+                <h2>Installation et intégration des <span>équipements télécoms</span></h2>
+
+                <p>
+                    Une phase essentielle pour rendre les sites télécoms
+                    totalement opérationnels.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-6">
+
+                    <div class="shadow-sm rounded p-4 h-100 bg-white">
+
+                        <h4 class="mb-4">
+                            <i class="bi bi-tools text-primary"></i>
+                            Installation Télécom
+                        </h4>
+
+                        <p>
+                            L’installation consiste à monter et raccorder
+                            tous les équipements nécessaires au fonctionnement
+                            du réseau.
+                        </p>
+
+                        <ul class="ve-service-benefits">
+
+                            <li><i class="bi bi-check-circle-fill text-primary"></i> Montage équipements</li>
+                            <li><i class="bi bi-check-circle-fill text-primary"></i> Fixation antennes</li>
+                            <li><i class="bi bi-check-circle-fill text-primary"></i> Raccordement câbles</li>
+                            <li><i class="bi bi-check-circle-fill text-primary"></i> Installation électrique</li>
+                            <li><i class="bi bi-check-circle-fill text-primary"></i> Préparation technique du site</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <div class="shadow-sm rounded p-4 h-100 bg-white">
+
+                        <h4 class="mb-4">
+                            <i class="bi bi-diagram-3-fill text-success"></i>
+                            Intégration Télécom
+                        </h4>
+
+                        <p>
+                            L’intégration permet de connecter le nouveau site
+                            au réseau principal de l’opérateur.
+                        </p>
+
+                        <ul class="ve-service-benefits">
+
+                            <li><i class="bi bi-check-circle-fill text-success"></i> Configuration équipements</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i> Synchronisation systèmes</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i> Activation services</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i> Connexion au réseau national</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i> Tests et validation finale</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- EQUIPEMENTS -->
+    <section class="ve-section">
+
+        <div class="container">
+
+            <div class="ve-section-header text-center">
+                <span class="ve-section-tag">Équipements Télécoms</span>
+                <h2>Les infrastructures installées sur les <span>sites réseau</span></h2>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="shadow-sm rounded p-4 h-100 text-center">
+
+                        <i class="bi bi-broadcast fs-1 text-primary"></i>
+
+                        <h4 class="mt-3">Équipements Radio</h4>
+
+                        <p>
+                            BTS, BBU, RRU, antennes, feeders, jumpers.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="shadow-sm rounded p-4 h-100 text-center">
+
+                        <i class="bi bi-router fs-1 text-success"></i>
+
+                        <h4 class="mt-3">Transmission</h4>
+
+                        <p>
+                            Faisceaux hertziens, fibre optique,
+                            routeurs, switches, IDU/ODU.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="shadow-sm rounded p-4 h-100 text-center">
+
+                        <i class="bi bi-lightning-charge-fill fs-1 text-warning"></i>
+
+                        <h4 class="mt-3">Énergie</h4>
+
+                        <p>
+                            Batteries, ATS, générateurs,
+                            redresseurs et solaire.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="shadow-sm rounded p-4 h-100 text-center">
+
+                        <i class="bi bi-shield-lock-fill fs-1 text-danger"></i>
+
+                        <h4 class="mt-3">Sécurité</h4>
+
+                        <p>
+                            Mise à la terre, alarmes,
+                            extincteurs et vidéosurveillance.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- PHASES -->
+    <section class="ve-section bg-light">
+
+        <div class="container">
+
+            <div class="ve-section-header text-center">
+                <span class="ve-section-tag">Grandes phases</span>
+                <h2>Étapes d’installation d’un <span>site télécom</span></h2>
+            </div>
+
+            <div class="row g-4">
+
+                {% for step in [
+                    ('1','Préparation du site'),
+                    ('2','Réception des équipements'),
+                    ('3','Installation des supports'),
+                    ('4','Installation radio'),
+                    ('5','Installation transmission'),
+                    ('6','Installation énergie'),
+                    ('7','Câblage'),
+                    ('8','Mise à la terre')
+                ] %}
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="shadow-sm rounded p-4 h-100 bg-white text-center">
+
+                        <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-3"
+                             style="width:70px;height:70px;font-size:22px;font-weight:bold;">
+                            {{ step[0] }}
+                        </div>
+
+                        <h5>{{ step[1] }}</h5>
+
+                    </div>
+
+                </div>
+
+                {% endfor %}
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CTA -->
+    <section class="ve-cta-banner bg-img"
+             style="background-image:url( {{ url_for('static', filename='img/maintenance.jpg') }} );">
+
+        <div class="ve-cta-overlay"></div>
+
+        <div class="container ve-cta-content">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-8">
+
+                    <h2>
+                        Besoin d’un partenaire fiable pour vos infrastructures télécoms ?
+                    </h2>
+
+                    <p>
+                        RHINOS PLUS TELECOM vous accompagne dans la maintenance,
+                        l’exploitation, l’installation et l’intégration des réseaux
+                        télécoms avec des solutions techniques modernes et sécurisées.
+                    </p>
+
+                </div>
+
+                <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+
+                    <a href="/contact" class="ve-btn-white">
+                        Contactez-nous
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+{% endblock %}
