@@ -138,10 +138,12 @@ def newsletter():
         </p>
     """
 
-    mail.send(msg)
-
-    flash("Inscription réussie ! Vérifiez votre email.", "success")
-        
+    try:
+        mail.send(msg)
+        flash("Inscription réussie ! Vérifiez votre email.", "success")
+    except Exception as e:
+        print("MAIL ERROR (newsletter):", e)
+        flash("Inscription enregistrée, mais email non envoyé.", "warning")        
     
     return redirect ( url_for('index') )
 
@@ -155,86 +157,54 @@ def contact():
     if request.method == "POST":
 
         full_name = request.form.get("full_name")
-
         email = request.form.get("email")
-
         phone = request.form.get("phone")
-
         service = request.form.get("service")
-
         message_text = request.form.get("message")
 
         # -----------------------------
         # SAVE DATABASE
         # -----------------------------
         new_message = ContactMessage(
-
             full_name=full_name,
-
             email=email,
-
             phone=phone,
-
             service=service,
-
             message=message_text
         )
 
         db.session.add(new_message)
-
         db.session.commit()
 
         # -----------------------------
-        # EMAIL TO COMPANY
+        # EMAILS
         # -----------------------------
         company_email = Message(
-
             subject="Nouveau message client",
-
             sender=app.config["MAIL_USERNAME"],
-
             recipients=[app.config["MAIL_USERNAME"]]
         )
 
         company_email.html = f"""
-
             <h2>Nouveau message reçu</h2>
-
             <p><strong>Nom :</strong> {full_name}</p>
-
             <p><strong>Email :</strong> {email}</p>
-
             <p><strong>Téléphone :</strong> {phone}</p>
-
             <p><strong>Service :</strong> {service}</p>
-
             <p><strong>Message :</strong></p>
-
             <p>{message_text}</p>
-
         """
 
-        mail.send(company_email)
-
-        # -----------------------------
-        # CONFIRMATION CLIENT
-        # -----------------------------
         user_email = Message(
-
             subject="Nous avons bien reçu votre message",
-
             sender=app.config["MAIL_USERNAME"],
-
             recipients=[email]
         )
 
         user_email.html = f"""
-
             <h2>Bonjour {full_name} 👋</h2>
 
-            <p>
-                Merci de nous avoir contactés.
-            </p>
+            <p>Merci de nous avoir contactés.</p>
 
             <p>
                 Notre équipe analysera votre demande
@@ -247,19 +217,24 @@ def contact():
                 Cordialement,<br>
                 RHINOS PLUS
             </p>
-
         """
 
-        mail.send(user_email)
+        # -----------------------------
+        # SAFE EMAIL SENDING
+        # -----------------------------
+        try:
+            mail.send(company_email)
+            mail.send(user_email)
 
-        flash(
-            "Votre message a été envoyé avec succès.",
-            "success"
-        )
+            flash("Votre message a été envoyé avec succès.", "success")
+
+        except Exception as e:
+            print("MAIL ERROR (contact):", e)
+            flash("Message enregistré, mais email non envoyé.", "warning")
 
         return redirect(url_for("contact"))
 
-    return render_template("contact.html",titre="Contact")
+    return render_template("contact.html", titre="Contact")
 
 
 #@app.route('/contact')
